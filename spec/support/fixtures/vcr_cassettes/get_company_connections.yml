@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 17 May 2023 21:24:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7c8eed1dc9802eeb-LAX
+      Cache-Control:
+      - no-store
+      Strict-Transport-Security:
+      - max-age=2592000
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Apo-Via:
+      - origin,host
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      Expect-Ct:
+      - max-age=86400, enforce
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - origin
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      X-Content-Type-Options:
+      - nosniff
+      X-Correlation-Id:
+      - cc4d1111b5d51cf6035d920e3f453447
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"id":"1a115249-f359-4a2f-a842-54480549c52f","integrationId":"9e0cc03b-3868-4543-98c0-568f0f1b12a3","integrationKey":"mqjo","sourceId":"aff0f057-255f-42c4-8d4a-ae23b43e1615","platformName":"Sandbox","linkUrl":"https://link-api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/start","status":"Linked","lastSync":"2023-05-11T14:44:51.1203478Z","created":"2023-05-11T13:49:13.0000000Z","sourceType":"Accounting"},{"id":"401b4e94-f454-4f09-af4c-109857365ba9","integrationId":"b27611c5-c104-4360-b979-e8f6b16db164","integrationKey":"aiwb","sourceId":"fac84d06-5a70-4e9e-bf46-7607e647b036","platformName":"Commerce
+        Sandbox","linkUrl":"https://link-api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/401b4e94-f454-4f09-af4c-109857365ba9/start","status":"Linked","lastSync":"2023-05-11T14:44:51.0535949Z","created":"2023-05-11T13:49:13.0000000Z","sourceType":"Commerce"},{"id":"5174209f-f0c7-4393-9e5a-87efd9a0eeaa","integrationId":"baecf6cb-402c-4611-ae02-b0b5f7e3384f","integrationKey":"qhnd","sourceId":"5f32b51a-d5e9-4fb8-a3f1-2f51d927e23f","platformName":"Banking
+        Sandbox","linkUrl":"https://link-api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/5174209f-f0c7-4393-9e5a-87efd9a0eeaa/start","status":"Linked","lastSync":"2023-05-11T14:44:51.3484342Z","created":"2023-05-11T13:49:13.0000000Z","sourceType":"Banking"}],"pageNumber":1,"pageSize":100,"totalResults":3,"_links":{"current":{"href":"/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections"},"self":{"href":"/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections"}}}'
+  recorded_at: Wed, 17 May 2023 21:24:15 GMT
+recorded_with: VCR 6.1.0

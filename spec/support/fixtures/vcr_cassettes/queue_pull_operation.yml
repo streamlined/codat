@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/data/invoices
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 17 May 2023 21:48:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=2592000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - origin
+      Expect-Ct:
+      - max-age=86400, enforce
+      X-Correlation-Id:
+      - 5c933f5cfc3a494672a8cdb5872a8076
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7c8f10dfd8bc7ea7-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"56650d3b-db37-470b-a5fb-b4eb693e1044","companyId":"9c355f96-c981-4e03-b261-b9ea74ac82cc","connectionId":"1a115249-f359-4a2f-a842-54480549c52f","dataType":"invoices","status":"Initial","requested":"2023-05-17T21:48:40.9647351Z","progress":10,"isCompleted":false,"isErrored":false}'
+  recorded_at: Wed, 17 May 2023 21:48:41 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/data/all
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Date:
+      - Wed, 17 May 2023 21:44:20 GMT
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=2592000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - origin
+      Expect-Ct:
+      - max-age=86400, enforce
+      X-Correlation-Id:
+      - bf1dca3274d042c37c87eedcbd80dac7
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7c8f0a7c38b12aef-LAX
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Wed, 17 May 2023 21:44:20 GMT
+recorded_with: VCR 6.1.0

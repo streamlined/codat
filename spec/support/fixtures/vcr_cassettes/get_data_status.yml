@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/dataStatus
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 17 May 2023 21:33:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7c8efb1a7b805269-LAX
+      Cache-Control:
+      - no-store
+      Strict-Transport-Security:
+      - max-age=2592000
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Apo-Via:
+      - origin,host
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      Expect-Ct:
+      - max-age=86400, enforce
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - origin
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      X-Content-Type-Options:
+      - nosniff
+      X-Correlation-Id:
+      - 3832c8673480df3c5a3db7bf771cd0a1
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"bankTransactions":{"dataType":"bankTransactions","lastSuccessfulSync":"2023-05-11T14:44:51.0830645Z","currentStatus":"Complete","latestSyncId":"fa806b95-a7e1-481c-96d9-4c46a981b665","latestSuccessfulSyncId":"fa806b95-a7e1-481c-96d9-4c46a981b665"},"bankAccounts":{"dataType":"bankAccounts","lastSuccessfulSync":"2023-05-11T14:44:50.7878549Z","currentStatus":"Complete","latestSyncId":"4628d10d-4378-4d20-b1ba-44ccb8d6c216","latestSuccessfulSyncId":"4628d10d-4378-4d20-b1ba-44ccb8d6c216"},"commerce-productCategories":{"dataType":"commerce-productCategories","lastSuccessfulSync":"2023-05-11T14:44:51.0429473Z","currentStatus":"Complete","latestSyncId":"823a5a25-13f8-451a-a881-a21e80930daa","latestSuccessfulSyncId":"823a5a25-13f8-451a-a881-a21e80930daa"},"profitAndLoss":{"dataType":"profitAndLoss","lastSuccessfulSync":"2023-05-11T14:44:50.8543232Z","currentStatus":"Complete","latestSyncId":"0aa46a94-4ecf-48af-bd52-019827a75c6b","latestSuccessfulSyncId":"0aa46a94-4ecf-48af-bd52-019827a75c6b"},"commerce-taxComponents":{"dataType":"commerce-taxComponents","lastSuccessfulSync":"2023-05-11T14:44:50.8667913Z","currentStatus":"Complete","latestSyncId":"dfc4de01-7891-4f7d-9836-811a34d6f144","latestSuccessfulSyncId":"dfc4de01-7891-4f7d-9836-811a34d6f144"},"balanceSheet":{"dataType":"balanceSheet","lastSuccessfulSync":"2023-05-11T14:44:50.8272358Z","currentStatus":"Complete","latestSyncId":"995e7e89-5ed0-4ecb-a64a-da943ce65eb0","latestSuccessfulSyncId":"995e7e89-5ed0-4ecb-a64a-da943ce65eb0"},"billCreditNotes":{"dataType":"billCreditNotes","lastSuccessfulSync":"2023-05-11T14:44:50.9877046Z","currentStatus":"Complete","latestSyncId":"f98fc6c5-9bc3-4245-a4b0-a41a61390fd9","latestSuccessfulSyncId":"f98fc6c5-9bc3-4245-a4b0-a41a61390fd9"},"commerce-paymentMethods":{"dataType":"commerce-paymentMethods","lastSuccessfulSync":"2023-05-11T14:44:50.7428623Z","currentStatus":"Complete","latestSyncId":"01fba8ab-8aae-4eee-b519-fbffc7824324","latestSuccessfulSyncId":"01fba8ab-8aae-4eee-b519-fbffc7824324"},"billPayments":{"dataType":"billPayments","lastSuccessfulSync":"2023-05-11T14:44:50.7131123Z","currentStatus":"Complete","latestSyncId":"42eed6de-1662-45f2-a327-8eaf41446a3f","latestSuccessfulSyncId":"42eed6de-1662-45f2-a327-8eaf41446a3f"},"commerce-locations":{"dataType":"commerce-locations","lastSuccessfulSync":"2023-05-11T14:44:50.5184052Z","currentStatus":"Complete","latestSyncId":"35ff94d7-aaea-4b3e-8e25-063834641c2c","latestSuccessfulSyncId":"35ff94d7-aaea-4b3e-8e25-063834641c2c"},"bills":{"dataType":"bills","lastSuccessfulSync":"2023-05-11T14:44:50.9079781Z","currentStatus":"Complete","latestSyncId":"8c8e4043-83a8-4e5f-a7a6-99559469ee5f","latestSuccessfulSyncId":"8c8e4043-83a8-4e5f-a7a6-99559469ee5f"},"commerce-transactions":{"dataType":"commerce-transactions","lastSuccessfulSync":"2023-05-11T14:44:50.4921806Z","currentStatus":"Complete","latestSyncId":"c43da2d3-ba8d-42d8-9de0-426d1da43534","latestSuccessfulSyncId":"c43da2d3-ba8d-42d8-9de0-426d1da43534"},"suppliers":{"dataType":"suppliers","lastSuccessfulSync":"2023-05-11T14:44:50.7112490Z","currentStatus":"Complete","latestSyncId":"3e41c171-72f1-46d0-9777-f558409c5e53","latestSuccessfulSyncId":"3e41c171-72f1-46d0-9777-f558409c5e53"},"commerce-products":{"dataType":"commerce-products","lastSuccessfulSync":"2023-05-11T14:44:50.6058617Z","currentStatus":"Complete","latestSyncId":"6af3d9a5-584a-4253-86a7-9eeef39d46ac","latestSuccessfulSyncId":"6af3d9a5-584a-4253-86a7-9eeef39d46ac"},"creditNotes":{"dataType":"creditNotes","lastSuccessfulSync":"2023-05-11T14:44:50.3825771Z","currentStatus":"Complete","latestSyncId":"85cb7e92-0fcc-4b17-8173-c0871411a140","latestSuccessfulSyncId":"85cb7e92-0fcc-4b17-8173-c0871411a140"},"commerce-payments":{"dataType":"commerce-payments","lastSuccessfulSync":"2023-05-11T14:44:50.6692099Z","currentStatus":"Complete","latestSyncId":"6d4ad0c6-1f42-400f-ab7c-af646b547ee7","latestSuccessfulSyncId":"6d4ad0c6-1f42-400f-ab7c-af646b547ee7"},"payments":{"dataType":"payments","lastSuccessfulSync":"2023-05-11T14:44:50.4725460Z","currentStatus":"Complete","latestSyncId":"091d7ea7-66d2-4dcb-a51b-5f6581fc09d6","latestSuccessfulSyncId":"091d7ea7-66d2-4dcb-a51b-5f6581fc09d6"},"banking-transactions":{"dataType":"banking-transactions","lastSuccessfulSync":"2023-05-11T14:44:51.3365742Z","currentStatus":"Complete","latestSyncId":"4bee38d2-405e-4e8f-a7b2-086d89c2bad9","latestSuccessfulSyncId":"4bee38d2-405e-4e8f-a7b2-086d89c2bad9"},"invoices":{"dataType":"invoices","lastSuccessfulSync":"2023-05-11T14:44:49.9090113Z","currentStatus":"Complete","latestSyncId":"39bad06a-52ef-47c1-9e94-7600390df5d8","latestSuccessfulSyncId":"39bad06a-52ef-47c1-9e94-7600390df5d8"},"commerce-orders":{"dataType":"commerce-orders","lastSuccessfulSync":"2023-05-11T14:44:50.6255427Z","currentStatus":"Complete","latestSyncId":"53922f19-a3ca-422d-8e70-e4bd5bf782d1","latestSuccessfulSyncId":"53922f19-a3ca-422d-8e70-e4bd5bf782d1"},"banking-transactionCategories":{"dataType":"banking-transactionCategories","lastSuccessfulSync":"2023-05-11T14:44:50.5674177Z","currentStatus":"Complete","latestSyncId":"5a2f2fb2-353d-48f7-b3ee-c2860f0b699f","latestSuccessfulSyncId":"5a2f2fb2-353d-48f7-b3ee-c2860f0b699f"},"customers":{"dataType":"customers","lastSuccessfulSync":"2023-05-11T14:44:49.8777296Z","currentStatus":"Complete","latestSyncId":"db0b5ebf-8ea2-4aac-971c-2ecb809117bb","latestSuccessfulSyncId":"db0b5ebf-8ea2-4aac-971c-2ecb809117bb"},"commerce-disputes":{"dataType":"commerce-disputes","lastSuccessfulSync":"2023-05-11T14:44:50.6164981Z","currentStatus":"Complete","latestSyncId":"8ba13785-9739-4251-ab58-f250ef1b6b95","latestSuccessfulSyncId":"8ba13785-9739-4251-ab58-f250ef1b6b95"},"banking-accounts":{"dataType":"banking-accounts","lastSuccessfulSync":"2023-05-11T14:44:50.5378317Z","currentStatus":"Complete","latestSyncId":"5307e8c7-3f81-46fb-9f40-383e11cfba3d","latestSuccessfulSyncId":"5307e8c7-3f81-46fb-9f40-383e11cfba3d"},"taxRates":{"dataType":"taxRates","lastSuccessfulSync":"2023-05-11T14:44:50.2753556Z","currentStatus":"Complete","latestSyncId":"84b428e6-66ae-4fe5-ba8c-456edba621ef","latestSuccessfulSyncId":"84b428e6-66ae-4fe5-ba8c-456edba621ef"},"commerce-customers":{"dataType":"commerce-customers","lastSuccessfulSync":"2023-05-11T14:44:50.3887046Z","currentStatus":"Complete","latestSyncId":"38018cc4-2295-4439-86e7-c4eafe976271","latestSuccessfulSyncId":"38018cc4-2295-4439-86e7-c4eafe976271"},"chartOfAccounts":{"dataType":"chartOfAccounts","lastSuccessfulSync":"2023-05-11T14:44:50.4157217Z","currentStatus":"Complete","latestSyncId":"de2b8c1d-8967-4b2b-9925-056fa8e2721d","latestSuccessfulSyncId":"de2b8c1d-8967-4b2b-9925-056fa8e2721d"},"banking-accountBalances":{"dataType":"banking-accountBalances","lastSuccessfulSync":"2023-05-11T14:44:50.6239919Z","currentStatus":"Complete","latestSyncId":"1e3ab570-6632-4d42-a57c-d81cb395b5d0","latestSuccessfulSyncId":"1e3ab570-6632-4d42-a57c-d81cb395b5d0"},"commerce-companyInfo":{"dataType":"commerce-companyInfo","lastSuccessfulSync":"2023-05-11T14:44:50.3733700Z","currentStatus":"Complete","latestSyncId":"21107a21-2c2c-468f-b305-9bdeeb2f822f","latestSuccessfulSyncId":"21107a21-2c2c-468f-b305-9bdeeb2f822f"},"company":{"dataType":"company","lastSuccessfulSync":"2023-05-11T14:44:50.0707444Z","currentStatus":"Complete","latestSyncId":"ff27be7f-69c2-4a26-9750-3ea203b13755","latestSuccessfulSyncId":"ff27be7f-69c2-4a26-9750-3ea203b13755"}}'
+  recorded_at: Wed, 17 May 2023 21:33:48 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.codat.io/companies
+    body:
+      encoding: UTF-8
+      string: '{"name":"API test company","description":"Rspec test company"}'
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 17 May 2023 16:29:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=2592000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - origin
+      Expect-Ct:
+      - max-age=86400, enforce
+      X-Correlation-Id:
+      - f101ded1f4740ed71564afed8df3b045
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7c8d3cc04d8a2b7d-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"15e3d267-33f4-4323-b5f6-1df5e98a5fe7","name":"API test company","description":"Rspec
+        test company","platform":"","redirect":"https://link.codat.io/company/15e3d267-33f4-4323-b5f6-1df5e98a5fe7","dataConnections":[],"created":"2023-05-17T16:29:06.5242904Z"}'
+  recorded_at: Wed, 17 May 2023 16:29:06 GMT
+recorded_with: VCR 6.1.0
