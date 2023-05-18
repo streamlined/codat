@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/data/journalEntries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 May 2023 23:00:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7c97b6ec7d11520e-LAX
+      Cache-Control:
+      - no-store
+      Strict-Transport-Security:
+      - max-age=2592000
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Apo-Via:
+      - origin,host
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      Expect-Ct:
+      - max-age=86400, enforce
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - origin
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      X-Content-Type-Options:
+      - nosniff
+      X-Correlation-Id:
+      - 8812efa811103079a73ad6cf7e838f76
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"id":"f81fa075-92be-436c-ace6-131129c57d4a","description":"record
+        level description","postedOn":"2023-02-23T19:49:16","createdOn":"2023-02-22T19:49:16","updatedOn":"2023-02-21T19:49:16","journalRef":{"id":"12"},"journalLines":[{"description":"journalLines.description
+        debit","netAmount":23.02,"currency":"USD","accountRef":{"id":"80000019-1671793811"},"tracking":{"recordRefs":[{"id":"80000001-1674553252","dataType":"string"}]}},{"description":"journalLines.description
+        credit","netAmount":-23.02,"currency":"USD","accountRef":{"id":"8000001E-1671793811"},"tracking":{"recordRefs":[{"id":"80000002-1674553271","dataType":"trackingCategories"}]}}],"modifiedDate":"2023-05-18T22:59:50Z","recordRef":{"id":"string","dataType":"string"},"metadata":{"isDeleted":false}}],"pageNumber":1,"pageSize":100,"totalResults":1,"_links":{"current":{"href":"/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/data/journalEntries"},"self":{"href":"/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/data/journalEntries"}}}'
+  recorded_at: Thu, 18 May 2023 23:00:08 GMT
+recorded_with: VCR 6.1.0

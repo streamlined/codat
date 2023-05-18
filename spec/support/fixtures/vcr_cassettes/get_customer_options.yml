@@ -1,0 +1,111 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/options/customers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 May 2023 23:22:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7c97d7b8ce3f0feb-LAX
+      Cache-Control:
+      - no-store
+      Strict-Transport-Security:
+      - max-age=2592000
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Apo-Via:
+      - origin,host
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      Expect-Ct:
+      - max-age=86400, enforce
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - origin
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      X-Content-Type-Options:
+      - nosniff
+      X-Correlation-Id:
+      - d7b0558d80800ea2bf32724a56f1b309
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"type":"Object","displayName":"Customer","description":"A customer
+        is a person or organisation who buys goods or services","properties":{"customerName":{"type":"String","displayName":"Customer
+        Name","description":"The name for the customer, typically a company name","required":true},"contactName":{"type":"String","displayName":"Contact
+        Name","description":"The name of the main contact for the customer","required":true},"emailAddress":{"type":"String","displayName":"Email
+        Address","description":"The preferred Email address the customer should be
+        contacted on","required":true},"defaultCurrency":{"type":"String","displayName":"Default
+        Currency","description":"The default currency for transactions recorded against
+        the customer","required":true},"phone":{"type":"String","displayName":"Phone","description":"The
+        preferred phone number the customer should be contacted on","required":true},"addresses":{"type":"Array","displayName":"Addresses","description":"A
+        collection of addresses associated to the customer","properties":{"type":{"type":"String","displayName":"Address
+        Type","description":"The type of the address","required":true},"line1":{"type":"String","displayName":"Line
+        1","description":"The first line of the address","required":true},"line2":{"type":"String","displayName":"Line
+        2","description":"The second line of the address","required":true},"city":{"type":"String","displayName":"City","description":"The
+        third line of the address, or city","required":true},"region":{"type":"String","displayName":"Region","description":"The
+        fourth line of the address, or region","required":true},"country":{"type":"String","displayName":"Country","description":"The
+        country for the address","required":true},"postalCode":{"type":"String","displayName":"Postal/Zip
+        Code","description":"The postal (or zip) code for the address","required":true}},"required":true},"contacts":{"type":"Array","displayName":"Contacts","description":"A
+        collection of alternative contacts for the customer","properties":{"name":{"type":"String","displayName":"Name","description":"The
+        name of the contact","required":true},"email":{"type":"String","displayName":"Email","description":"The
+        email address for the contact","required":true},"phone":{"type":"Array","displayName":"Phone","description":"A
+        collection of phone numbers for the contact","properties":{"number":{"type":"String","displayName":"Number","description":"The
+        full number including country, and area code where applicable","required":true},"type":{"type":"String","displayName":"Phone
+        Type","description":"The type of phone number","required":true}},"required":true},"address":{"type":"Object","displayName":"Address","description":"The
+        address for the contact","properties":{"type":{"type":"String","displayName":"Address
+        Type","description":"The type of the address","required":true},"line1":{"type":"String","displayName":"Line
+        1","description":"The first line of the address","required":true},"line2":{"type":"String","displayName":"Line
+        2","description":"The second line of the address","required":true},"city":{"type":"String","displayName":"City","description":"The
+        third line of the address, or city","required":true},"region":{"type":"String","displayName":"Region","description":"The
+        fourth line of the address, or region","required":true},"country":{"type":"String","displayName":"Country","description":"The
+        country for the address","required":true},"postalCode":{"type":"String","displayName":"Postal/Zip
+        Code","description":"The postal (or zip) code for the address","required":true}},"required":true},"status":{"type":"String","displayName":"Contact
+        Status","description":"The current state of the contact","required":true},"modifiedDate":{"type":"DateTime","displayName":"Modified
+        Date","description":"The date the record was last updated in the system cache","required":true}},"required":true},"registrationNumber":{"type":"String","displayName":"Registration
+        Number","description":"The customer''s registration number","required":true},"taxNumber":{"type":"String","displayName":"Tax
+        Number","description":"The customer''s tax number","required":true},"status":{"type":"String","displayName":"Customer
+        Status","description":"The current state of the customer","required":true},"metadata":{"type":"Object","displayName":"Metadata","description":"Miscellaneous
+        data about the item","properties":{"isDeleted":{"type":"Boolean","displayName":"IsDeleted","description":"A
+        boolean to indicate whether the object has been deleted","required":true}},"required":true}},"required":true}'
+  recorded_at: Thu, 18 May 2023 23:22:31 GMT
+recorded_with: VCR 6.1.0

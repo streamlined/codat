@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/options/payments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 May 2023 17:43:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7c95e7b8ef4952bf-LAX
+      Cache-Control:
+      - no-store
+      Strict-Transport-Security:
+      - max-age=2592000
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Apo-Via:
+      - origin,host
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      Expect-Ct:
+      - max-age=86400, enforce
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - origin
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      X-Content-Type-Options:
+      - nosniff
+      X-Correlation-Id:
+      - 7d31826e33f99a9dcb29ca149d351993
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"type":"Object","displayName":"Payment","description":"A payment represents
+        an allocation of transactions across an ''accounts receivable'' account (customer)","properties":{"customerRef":{"type":"Object","displayName":"Customer
+        Reference","description":"Reference to the customer the payment has been sent
+        by","properties":{"id":{"type":"String","displayName":"Identifier","description":"The
+        reference identifier for the customer","required":true},"companyName":{"type":"String","displayName":"Name","description":"The
+        name of the customer referenced by the identifier","required":true}},"required":true},"accountRef":{"type":"Object","displayName":"Nominal
+        Account Reference","description":"Reference to the nominal account the payment
+        is linked to","properties":{"id":{"type":"String","displayName":"Account ID","description":"The
+        identifier for the account","required":true},"name":{"type":"String","displayName":"Name","description":"Name
+        of the account","required":true}},"required":true},"paymentMethodRef":{"type":"Object","displayName":"Payment
+        Method Reference","description":"Reference to the method of this payment","properties":{"id":{"type":"String","displayName":"Identifier","description":"The
+        reference identifier for the payment method","required":true},"name":{"type":"String","displayName":"Name","description":"The
+        name of the payment method referenced by the identifier","required":true}},"required":true},"totalAmount":{"type":"Number","displayName":"Total
+        Amount","description":"The total amount of the payment, inclusive of discounts
+        and tax","required":true},"currency":{"type":"String","displayName":"Currency","description":"Currency
+        of the payment","required":true},"currencyRate":{"type":"Number","displayName":"Currency
+        Exchange Rate","description":"The exchange rate between the currency of the
+        payment and the base currency of the company","required":true},"date":{"type":"DateTime","displayName":"Date","description":"The
+        date the payment was recorded","required":true},"note":{"type":"String","displayName":"Note","description":"Any
+        additional text based information associated with the payment","required":true},"lines":{"type":"Array","displayName":"Lines","description":"A
+        collection of payment lines","properties":{"amount":{"type":"Number","displayName":"Amount","description":"The
+        total amount for the line in the payment currency","required":true},"links":{"type":"Array","displayName":"Links","description":"A
+        collection of linked transactions","properties":{"type":{"type":"String","displayName":"Link
+        Type","description":"The type of transaction that is being linked","required":true},"id":{"type":"String","displayName":"Identifier","description":"The
+        identifier for the referenced transaction","required":true},"amount":{"type":"Number","displayName":"Amount","description":"The
+        amount by which the balance of the linked entity is altered, in the currency
+        of the linked entity","required":true},"currencyRate":{"type":"Number","displayName":"Currency
+        Exchange Rate","description":"The exchange rate between the currency of the
+        payment and the currency of the linked transaction","required":true}},"required":true},"allocatedOnDate":{"type":"DateTime","displayName":"Allocated
+        On Date","description":"The date the payment was allocated","required":true}},"required":true},"reference":{"type":"String","displayName":"Reference","description":"A
+        user friendly reference for the payment","required":true},"metadata":{"type":"Object","displayName":"Metadata","description":"Miscellaneous
+        data about the item","properties":{"isDeleted":{"type":"Boolean","displayName":"IsDeleted","description":"A
+        boolean to indicate whether the object has been deleted","required":true}},"required":true}},"required":true}'
+  recorded_at: Thu, 18 May 2023 17:43:55 GMT
+recorded_with: VCR 6.1.0

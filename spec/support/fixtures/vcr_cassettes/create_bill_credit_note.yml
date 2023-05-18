@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/push/billCreditNotes
+    body:
+      encoding: UTF-8
+      string: '{"id":"6a0e9dfb-87b0-47d3-aaaf-9753ae9e757d","billCreditNoteNumber":"14763237","totalAmount":693,"remainingCredit":693,"status":"Submitted","issueDate":"2019-02-18T16:03:07.268Z","note":"Track
+        separately","currency":"USD","lineItems":[{"description":"AcmeMagnet","unitAmount":25,"discountAmount":0,"quantity":4,"subTotal":100,"taxAmount":10,"totalAmount":110,"itemRef":{"id":"3"},"taxRateRef":{"id":"6c88aff3-7cb9-4980-a3d3-443e72e02498"},"accountRef":{"id":"3f267b10-757d-44c0-bef9-20f70cc8fbe3"},"trackingCategoryRefs":[{"id":"department_1","name":"ACMERockets"},{"id":"costcode_2","name":"ACM2-ACMESigns"}]},{"description":"ACMEDisintegratingPistol","unitAmount":25,"discountAmount":0,"quantity":3,"subTotal":75,"taxAmount":7.5,"totalAmount":82.5,"itemRef":{"id":"3abf0883-03f7-44c6-bc15-1372522d25e1"},"taxRateRef":{"id":"6c88aff3-7cb9-4980-a3d3-443e72e02498"},"accountRef":{"id":"3f267b10-757d-44c0-bef9-20f70cc8fbe3"}},{"description":"ACMEWhippedCreamDispenser","unitAmount":52,"discountAmount":0,"quantity":6,"subTotal":312,"taxAmount":31.2,"totalAmount":343.2,"itemRef":{"id":"3691f3d9-0ff7-4358-8a93-bed31c1b4b03"},"taxRateRef":{"id":"6c88aff3-7cb9-4980-a3d3-443e72e02498"},"accountRef":{"id":"3f267b10-757d-44c0-bef9-20f70cc8fbe3"}},{"description":"ACMEJetPropelledPogoStick","unitAmount":130,"discountAmount":0,"quantity":1,"subTotal":130,"taxAmount":27.3,"totalAmount":157.3,"itemRef":{"id":"075410d4-7edc-4936-ba52-9e1e43cbe300"},"taxRateRef":{"id":"d606732b-db18-44d7-823b-7f15f42c32ea"},"accountRef":{"id":"3f267b10-757d-44c0-bef9-20f70cc8fbe3"}}],"supplierRef":{"id":"67C6A7A1-5E84-4AC4-B950-24A114E379D0","supplierName":"Chin''s
+        Gas and Oil"}}'
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 May 2023 20:37:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=2592000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - origin
+      Expect-Ct:
+      - max-age=86400, enforce
+      X-Correlation-Id:
+      - f5bffb9458ddf13fcbe843b3055aeaa3
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7c96e56d3fa17bbf-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"changes":[],"data":{"id":"6a0e9dfb-87b0-47d3-aaaf-9753ae9e757d","billCreditNoteNumber":"14763237","supplierRef":{"id":"67C6A7A1-5E84-4AC4-B950-24A114E379D0","supplierName":"Chin\u0027s
+        Gas and Oil"},"withholdingTax":[],"totalAmount":693.0,"totalDiscount":0,"subTotal":0,"totalTaxAmount":0,"discountPercentage":0,"remainingCredit":693.0,"status":"Submitted","issueDate":"2019-02-18T16:03:07.268Z","currency":"USD","lineItems":[{"description":"AcmeMagnet","unitAmount":25.0,"quantity":4.0,"discountAmount":0,"subTotal":100.0,"taxAmount":10.0,"totalAmount":110.0,"accountRef":{"id":"3f267b10-757d-44c0-bef9-20f70cc8fbe3"},"taxRateRef":{"id":"6c88aff3-7cb9-4980-a3d3-443e72e02498"},"itemRef":{"id":"3"},"trackingCategoryRefs":[{"id":"department_1","name":"ACMERockets"},{"id":"costcode_2","name":"ACM2-ACMESigns"}],"tracking":{"categoryRefs":[{"id":"department_1","name":"ACMERockets"},{"id":"costcode_2","name":"ACM2-ACMESigns"}],"isBilledTo":"Unknown","isRebilledTo":"Unknown","recordRefs":[]}},{"description":"ACMEDisintegratingPistol","unitAmount":25.0,"quantity":3.0,"discountAmount":0,"subTotal":75.0,"taxAmount":7.5,"totalAmount":82.5,"accountRef":{"id":"3f267b10-757d-44c0-bef9-20f70cc8fbe3"},"taxRateRef":{"id":"6c88aff3-7cb9-4980-a3d3-443e72e02498"},"itemRef":{"id":"3abf0883-03f7-44c6-bc15-1372522d25e1"},"trackingCategoryRefs":[]},{"description":"ACMEWhippedCreamDispenser","unitAmount":52.0,"quantity":6.0,"discountAmount":0,"subTotal":312.0,"taxAmount":31.2,"totalAmount":343.2,"accountRef":{"id":"3f267b10-757d-44c0-bef9-20f70cc8fbe3"},"taxRateRef":{"id":"6c88aff3-7cb9-4980-a3d3-443e72e02498"},"itemRef":{"id":"3691f3d9-0ff7-4358-8a93-bed31c1b4b03"},"trackingCategoryRefs":[]},{"description":"ACMEJetPropelledPogoStick","unitAmount":130.0,"quantity":1.0,"discountAmount":0,"subTotal":130.0,"taxAmount":27.3,"totalAmount":157.3,"accountRef":{"id":"3f267b10-757d-44c0-bef9-20f70cc8fbe3"},"taxRateRef":{"id":"d606732b-db18-44d7-823b-7f15f42c32ea"},"itemRef":{"id":"075410d4-7edc-4936-ba52-9e1e43cbe300"},"trackingCategoryRefs":[]}],"paymentAllocations":[],"modifiedDate":"2023-05-18T20:37:08.2554399Z","note":"Track
+        separately"},"dataType":"billCreditNotes","companyId":"9c355f96-c981-4e03-b261-b9ea74ac82cc","pushOperationKey":"a9bcbedf-2dfe-4c8f-8479-80c57f3c2eac","dataConnectionKey":"1a115249-f359-4a2f-a842-54480549c52f","requestedOnUtc":"2023-05-18T20:37:06.9562982Z","completedOnUtc":"2023-05-18T20:37:08.275279Z","status":"Success","validation":{"errors":[],"warnings":[]},"statusCode":200}'
+  recorded_at: Thu, 18 May 2023 20:37:08 GMT
+recorded_with: VCR 6.1.0

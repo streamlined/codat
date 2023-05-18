@@ -1,0 +1,272 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/data/customers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 May 2023 23:22:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7c97d7b6be0a7d80-LAX
+      Cache-Control:
+      - no-store
+      Strict-Transport-Security:
+      - max-age=2592000
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Apo-Via:
+      - origin,host
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      Expect-Ct:
+      - max-age=86400, enforce
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - origin
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      X-Content-Type-Options:
+      - nosniff
+      X-Correlation-Id:
+      - 283bf8c9d15e17d62ef3db2215d6904f
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"id":"c2cf973b-7b83-44d5-8a95-dce2d9e2f9ca","customerName":"Berry
+        Gleason","contactName":"Blake Rice","emailAddress":"Berry_Gleason94@hotmail.com","defaultCurrency":"GBP","phone":"01148
+        09062","addresses":[{"type":"Billing","line1":"Apt. 336","line2":"84413 Von
+        Place","city":"Enricoville","region":"England","country":"United Kingdom","postalCode":"WR0
+        7BF"}],"contacts":[{"name":"Blake Rice","email":"Blake99@yahoo.com","phone":[],"address":{"type":"Delivery","line1":"Suite
+        625","line2":"7427 Hadley Ways","city":"North Siennaland","region":"Northern
+        Ireland","country":"United Kingdom","postalCode":"LM19 0SS"},"status":"Active"},{"name":"Everett
+        Lind","email":"Everett.Lind@yahoo.com","phone":[],"address":{"type":"Delivery","line1":"Apt.
+        028","line2":"60031 Colby Throughway","city":"Jaedenport","region":"England","country":"United
+        Kingdom","postalCode":"DG38 3AE"},"status":"Active"}],"registrationNumber":"8OFEYFOM","taxNumber":"9575526629.227367","status":"Active","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-12-29T08:51:14","metadata":{"isDeleted":false}},{"id":"466077fa-d97b-4a77-a830-408ff2d1c92b","customerName":"Beth
+        Hegmann","contactName":"Emma Klein","emailAddress":"Beth82@gmail.com","defaultCurrency":"GBP","phone":"0800
+        572215","addresses":[{"type":"Delivery","line1":"Suite 332","line2":"7642
+        Swift Forge","city":"Lake Christian","region":"Northern Ireland","country":"United
+        Kingdom","postalCode":"RG6 3AW"},{"type":"Delivery","line1":"Apt. 142","line2":"3317
+        Devon Brook","city":"South Juliechester","region":"Northern Ireland","country":"United
+        Kingdom","postalCode":"PZ28 2RQ"},{"type":"Delivery","line1":"Suite 289","line2":"2599
+        Koss Locks","city":"East Jeffmouth","region":"England","country":"United Kingdom","postalCode":"LT11
+        5HS"}],"contacts":[{"name":"Emma Klein","email":"Emma_Klein49@gmail.com","phone":[{"number":"0101
+        545 8521","type":"Landline"}],"address":{"type":"Delivery","line1":"Suite
+        819","line2":"7687 Shanon Harbor","city":"Ezrabury","region":"Wales","country":"United
+        Kingdom","postalCode":"NH32 7OZ"},"status":"Unknown"},{"name":"Granville Homenick","email":"Granville.Homenick41@hotmail.com","phone":[{"number":"0800
+        583200","type":"Landline"}],"address":{"type":"Delivery","line1":"Apt. 195","line2":"37926
+        D\u0027Amore Radial","city":"North Stephonchester","region":"Scotland","country":"United
+        Kingdom","postalCode":"DY9 7OW"},"status":"Active"}],"registrationNumber":"GKBO08QE","taxNumber":"9555612490.340555","status":"Active","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-10-06T07:30:14","metadata":{"isDeleted":false}},{"id":"799fdf6a-d477-4dc2-84ef-738071dd2bfa","customerName":"Cassandre
+        Krajcik","contactName":"Barton Feest","emailAddress":"Cassandre.Krajcik@yahoo.com","defaultCurrency":"GBP","phone":"055
+        7616 0260","addresses":[{"type":"Billing","line1":"Suite 720","line2":"8160
+        Ryleigh Orchard","city":"Parisianhaven","region":"Northern Ireland","country":"United
+        Kingdom","postalCode":"IF85 0OS"},{"type":"Billing","line1":"Suite 556","line2":"9260
+        Carlie Roads","city":"North Adolf","region":"England","country":"United Kingdom","postalCode":"VA7
+        2RD"},{"type":"Delivery","line1":"Suite 193","line2":"722 Karlie Land","city":"Dejaborough","region":"Northern
+        Ireland","country":"United Kingdom","postalCode":"FI2 1CC"}],"contacts":[{"name":"Barton
+        Feest","email":"Barton_Feest@hotmail.com","phone":[],"address":{"type":"Delivery","line1":"Suite
+        287","line2":"630 Feeney Inlet","city":"East Lesly","region":"Scotland","country":"United
+        Kingdom","postalCode":"WI40 3HO"},"status":"Active"}],"registrationNumber":"LP0GIEOD","taxNumber":"7324323391.388489","status":"Active","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2023-01-29T21:17:14","metadata":{"isDeleted":false}},{"id":"4397614b-adef-4d0c-87b8-000601e6164f","customerName":"Delbert
+        Kris","contactName":"Waino Kunze","emailAddress":"Delbert.Kris@gmail.com","defaultCurrency":"GBP","phone":"019110
+        34233","addresses":[{"type":"Billing","line1":"Suite 152","line2":"66058 Boyer
+        Valleys","city":"Franeckimouth","region":"Wales","country":"United Kingdom","postalCode":"ZY6
+        6UH"},{"type":"Billing","line1":"Suite 748","line2":"79458 Barrows Tunnel","city":"South
+        Lonzo","region":"Wales","country":"United Kingdom","postalCode":"JW4 6OF"},{"type":"Delivery","line1":"Suite
+        222","line2":"364 Shane Ramp","city":"North Joanny","region":"Wales","country":"United
+        Kingdom","postalCode":"OG64 3TF"}],"contacts":[{"name":"Waino Kunze","email":"Waino_Kunze@hotmail.com","phone":[{"number":"0800
+        660319","type":"Mobile"},{"number":"0800 609393","type":"Landline"}],"address":{"type":"Delivery","line1":"Suite
+        639","line2":"24651 Mante Court","city":"North Paige","region":"Northern Ireland","country":"United
+        Kingdom","postalCode":"XN0 6LN"},"status":"Active"}],"registrationNumber":"RBNLOBSA","taxNumber":"4472571937.812803","status":"Active","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-05-11T11:13:14","metadata":{"isDeleted":false}},{"id":"6d76fbf9-c40e-4bc7-b85a-867c6937c1da","customerName":"Elaina
+        Grimes","contactName":"Marlene Green","emailAddress":"Elaina23@gmail.com","defaultCurrency":"GBP","phone":"024
+        2071 4131","addresses":[{"type":"Delivery","line1":"Suite 867","line2":"623
+        Aleen Forest","city":"Alysahaven","region":"Scotland","country":"United Kingdom","postalCode":"GN57
+        1GI"},{"type":"Delivery","line1":"Suite 882","line2":"3765 Rudy Spur","city":"Maeganton","region":"England","country":"United
+        Kingdom","postalCode":"GG76 0CB"}],"contacts":[{"name":"Marlene Green","email":"Marlene4@gmail.com","phone":[],"address":{"type":"Delivery","line1":"Suite
+        035","line2":"059 Mann Viaduct","city":"New Arvelbury","region":"Scotland","country":"United
+        Kingdom","postalCode":"GG28 4NM"},"status":"Unknown"}],"registrationNumber":"UOLTVMFC","taxNumber":"3191323335.1273503","status":"Unknown","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-02-24T10:48:14","metadata":{"isDeleted":false}},{"id":"5092d2fc-cf2a-4bec-a455-5de2cd3332fa","customerName":"Eldora
+        Robel","contactName":"Rene Nienow","emailAddress":"Eldora.Robel31@gmail.com","defaultCurrency":"GBP","phone":"01684
+        22722","addresses":[{"type":"Delivery","line1":"Apt. 243","line2":"9532 Gusikowski
+        Freeway","city":"Port Mazietown","region":"Northern Ireland","country":"United
+        Kingdom","postalCode":"CD6 0EG"}],"contacts":[{"name":"Rene Nienow","email":"Rene.Nienow77@yahoo.com","phone":[{"number":"01270
+        213177","type":"Mobile"}],"address":{"type":"Delivery","line1":"Apt. 405","line2":"1427
+        Morar Crossroad","city":"Maximeside","region":"Northern Ireland","country":"United
+        Kingdom","postalCode":"MZ6 4NM"},"status":"Active"},{"name":"Berniece Lowe","email":"Berniece49@yahoo.com","phone":[],"address":{"type":"Delivery","line1":"Suite
+        627","line2":"493 Bailey Lodge","city":"Dillanborough","region":"Wales","country":"United
+        Kingdom","postalCode":"GY63 4KO"},"status":"Unknown"},{"name":"Selmer Anderson","email":"Selmer16@gmail.com","phone":[{"number":"055
+        5192 4170","type":"Mobile"},{"number":"0131 840 0125","type":"Landline"}],"address":{"type":"Delivery","line1":"Apt.
+        849","line2":"9791 Gerda Gardens","city":"Helenestad","region":"England","country":"United
+        Kingdom","postalCode":"OF01 9AL"},"status":"Active"}],"registrationNumber":"XAREGQK4","taxNumber":"6601798959.296095","status":"Active","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2023-04-02T21:46:14","metadata":{"isDeleted":false}},{"id":"24a3d780-126d-4db1-b682-64a971bc494a","customerName":"Fern
+        Botsford","contactName":"Eulah Schneider","emailAddress":"Fern85@gmail.com","defaultCurrency":"GBP","phone":"0110
+        192 3396","addresses":[{"type":"Delivery","line1":"Apt. 170","line2":"527
+        Douglas Oval","city":"Wisozkstad","region":"Wales","country":"United Kingdom","postalCode":"OP92
+        5GL"},{"type":"Delivery","line1":"Apt. 749","line2":"404 Saige Pass","city":"East
+        Adrielstad","region":"England","country":"United Kingdom","postalCode":"JA6
+        6AY"}],"contacts":[{"name":"Eulah Schneider","email":"Eulah4@hotmail.com","phone":[],"address":{"type":"Billing","line1":"Suite
+        532","line2":"07079 Vilma Turnpike","city":"West Austin","region":"Northern
+        Ireland","country":"United Kingdom","postalCode":"VT8 9RM"},"status":"Active"}],"registrationNumber":"EHEBBXUT","taxNumber":"4316707342.020932","status":"Active","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-04-03T02:59:14","metadata":{"isDeleted":false}},{"id":"38ea6b8e-9abe-4437-b6d9-cee3e8b41f98","customerName":"Gerardo
+        Crist","contactName":"Crawford Ernser","emailAddress":"Gerardo_Crist@hotmail.com","defaultCurrency":"GBP","phone":"0800
+        601483","addresses":[{"type":"Delivery","line1":"Apt. 578","line2":"038 Sanford
+        Rapids","city":"Abelardoton","region":"Northern Ireland","country":"United
+        Kingdom","postalCode":"DA0 1GT"}],"contacts":[{"name":"Crawford Ernser","email":"Crawford.Ernser@gmail.com","phone":[{"number":"056
+        8875 6266","type":"Landline"},{"number":"0800 685755","type":"Mobile"}],"address":{"type":"Delivery","line1":"Suite
+        678","line2":"50415 Mazie Stravenue","city":"Abernathyview","region":"Northern
+        Ireland","country":"United Kingdom","postalCode":"NM9 0PK"},"status":"Active"}],"registrationNumber":"NB9774UK","taxNumber":"1154773291.999609","status":"Unknown","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-12-18T19:36:14","metadata":{"isDeleted":false}},{"id":"b60ae4f6-7310-4fc6-a5f9-1fff532f341e","customerName":"Hamill
+        LLC","contactName":"Renee Emard","emailAddress":"info@HamillLLC.com","defaultCurrency":"GBP","phone":"01623
+        34310","addresses":[{"type":"Billing","line1":"Apt. 895","line2":"2154 Concepcion
+        Wells","city":"Adelbertview","region":"Northern Ireland","country":"United
+        Kingdom","postalCode":"EO56 3OT"},{"type":"Billing","line1":"Suite 747","line2":"9299
+        Blick Skyway","city":"East Tate","region":"Scotland","country":"United Kingdom","postalCode":"YO7
+        9YX"}],"contacts":[{"name":"Renee Emard","email":"Renee90@hotmail.com","phone":[{"number":"01494
+        74153","type":"Mobile"},{"number":"021 3647 9139","type":"Landline"}],"address":{"type":"Delivery","line1":"Apt.
+        172","line2":"40481 Wilkinson Throughway","city":"Dulcefurt","region":"Scotland","country":"United
+        Kingdom","postalCode":"RK6 6HT"},"status":"Archived"},{"name":"Eloise Mertz","email":"Eloise_Mertz@yahoo.com","phone":[{"number":"016977
+        8154","type":"Landline"}],"address":{"type":"Delivery","line1":"Suite 297","line2":"131
+        Isaiah Creek","city":"North Estellechester","region":"England","country":"United
+        Kingdom","postalCode":"UA22 8WL"},"status":"Active"}],"registrationNumber":"XVSBEVGC","taxNumber":"8408227867.691479","status":"Active","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2021-12-30T22:43:14","metadata":{"isDeleted":false}},{"id":"6cf63ef7-64a1-4a46-96df-811f805253f1","customerName":"Ivory
+        Glover","contactName":"Korbin Becker","emailAddress":"Ivory54@yahoo.com","defaultCurrency":"GBP","phone":"0800
+        341934","addresses":[{"type":"Billing","line1":"Apt. 505","line2":"2823 Kuphal
+        Forge","city":"Schinnerburgh","region":"England","country":"United Kingdom","postalCode":"XX69
+        6JG"}],"contacts":[{"name":"Korbin Becker","email":"Korbin84@gmail.com","phone":[{"number":"056
+        1217 8646","type":"Landline"},{"number":"011122 60857","type":"Mobile"}],"address":{"type":"Delivery","line1":"Apt.
+        304","line2":"0455 Lauretta Cape","city":"New Jillianhaven","region":"Wales","country":"United
+        Kingdom","postalCode":"SE7 1UI"},"status":"Active"}],"registrationNumber":"UQPAPVHY","taxNumber":"7984201300.9394045","status":"Archived","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2023-04-23T09:43:14","metadata":{"isDeleted":false}},{"id":"66d818d1-9dcc-4887-ae9c-6fcd1c277484","customerName":"Johnson
+        Cremin","contactName":"Idell Lakin","emailAddress":"Johnson89@hotmail.com","defaultCurrency":"GBP","phone":"0861
+        938 3896","addresses":[{"type":"Delivery","line1":"Apt. 695","line2":"538
+        Feil Isle","city":"Townefurt","region":"Northern Ireland","country":"United
+        Kingdom","postalCode":"KQ5 0LG"},{"type":"Delivery","line1":"Suite 868","line2":"007
+        Jude Gardens","city":"Port Ephraimmouth","region":"England","country":"United
+        Kingdom","postalCode":"SH57 9OT"}],"contacts":[{"name":"Idell Lakin","email":"Idell99@yahoo.com","phone":[{"number":"0112
+        082 2060","type":"Landline"},{"number":"01494 320107","type":"Mobile"}],"address":{"type":"Billing","line1":"Suite
+        597","line2":"2241 Wilkinson Gateway","city":"Leuschkestad","region":"Northern
+        Ireland","country":"United Kingdom","postalCode":"FW91 6NK"},"status":"Active"}],"registrationNumber":"HQVAU8CM","taxNumber":"1589982943.4201608","status":"Archived","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-09-10T22:39:14","metadata":{"isDeleted":false}},{"id":"8619fce1-fd65-45d4-b8fd-5653b21f8732","customerName":"Jolie
+        Ondricka","contactName":"Glen Ondricka","emailAddress":"Jolie.Ondricka@yahoo.com","defaultCurrency":"GBP","phone":"056
+        0262 9484","addresses":[{"type":"Delivery","line1":"Apt. 156","line2":"189
+        Corkery Roads","city":"West Shayleeburgh","region":"England","country":"United
+        Kingdom","postalCode":"ZW60 3GP"}],"contacts":[{"name":"Glen Ondricka","email":"Glen87@hotmail.com","phone":[{"number":"0117
+        005 4483","type":"Mobile"}],"address":{"type":"Delivery","line1":"Suite 285","line2":"714
+        Elizabeth Prairie","city":"New Mertieborough","region":"Wales","country":"United
+        Kingdom","postalCode":"PO7 0QR"},"status":"Active"}],"registrationNumber":"LFP0YSN5","taxNumber":"8893898049.82809","status":"Active","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-11-16T21:48:14","metadata":{"isDeleted":false}},{"id":"989df7ec-73cc-4d89-addc-6ae24822d724","customerName":"Karina
+        Pollich","contactName":"Heaven Reinger","emailAddress":"Karina_Pollich75@gmail.com","defaultCurrency":"GBP","phone":"0118
+        892 4279","addresses":[{"type":"Delivery","line1":"Suite 817","line2":"2729
+        Heller Village","city":"Lake Darwin","region":"England","country":"United
+        Kingdom","postalCode":"JY27 3TK"}],"contacts":[{"name":"Heaven Reinger","email":"Heaven.Reinger76@yahoo.com","phone":[{"number":"0121
+        218 6959","type":"Landline"}],"address":{"type":"Delivery","line1":"Apt. 610","line2":"82788
+        Mabel Union","city":"North Everette","region":"England","country":"United
+        Kingdom","postalCode":"OG51 0OI"},"status":"Active"},{"name":"Karley Treutel","email":"Karley.Treutel85@yahoo.com","phone":[{"number":"0117
+        866 6714","type":"Landline"},{"number":"01724 97686","type":"Mobile"}],"address":{"type":"Delivery","line1":"Apt.
+        998","line2":"163 Orn Valley","city":"Wisokytown","region":"England","country":"United
+        Kingdom","postalCode":"TN3 0GC"},"status":"Active"},{"name":"Edgardo Labadie","email":"Edgardo_Labadie67@yahoo.com","phone":[{"number":"0800
+        244862","type":"Mobile"},{"number":"0500 622380","type":"Landline"}],"address":{"type":"Delivery","line1":"Apt.
+        667","line2":"102 Amya Expressway","city":"Port Arthurfurt","region":"England","country":"United
+        Kingdom","postalCode":"HD40 9SA"},"status":"Unknown"}],"registrationNumber":"5B9WOBWB","taxNumber":"5586244072.299793","status":"Unknown","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-03-12T01:15:14","metadata":{"isDeleted":false}},{"id":"747bb409-ef6c-4036-b19b-d8672761c7a0","customerName":"Layne
+        Stoltenberg","contactName":"Darrel Ullrich","emailAddress":"Layne.Stoltenberg13@hotmail.com","defaultCurrency":"GBP","phone":"0378
+        046 9452","addresses":[{"type":"Delivery","line1":"Suite 503","line2":"62338
+        Glenda Inlet","city":"Port Misty","region":"Wales","country":"United Kingdom","postalCode":"BG58
+        7VQ"}],"contacts":[{"name":"Darrel Ullrich","email":"Darrel99@gmail.com","phone":[{"number":"056
+        6143 6633","type":"Mobile"}],"address":{"type":"Billing","line1":"Apt. 631","line2":"3858
+        Lakin Fork","city":"Evalynstad","region":"Scotland","country":"United Kingdom","postalCode":"GC4
+        0KO"},"status":"Active"}],"registrationNumber":"MJFU4IVZ","taxNumber":"2928529830.6013107","status":"Active","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-12-24T11:17:14","metadata":{"isDeleted":false}},{"id":"2d945f16-daab-4b3b-9da5-6d6c28d221c1","customerName":"Leola
+        Rodriguez","contactName":"Albert Krajcik","emailAddress":"Leola29@hotmail.com","defaultCurrency":"GBP","phone":"0800
+        011 1450","addresses":[{"type":"Delivery","line1":"Apt. 220","line2":"894
+        Lori Plains","city":"East Danielaville","region":"Scotland","country":"United
+        Kingdom","postalCode":"JJ2 6JQ"},{"type":"Delivery","line1":"Apt. 071","line2":"130
+        Hettinger Meadow","city":"South Morgan","region":"Scotland","country":"United
+        Kingdom","postalCode":"JE6 5JG"}],"contacts":[{"name":"Albert Krajcik","email":"Albert37@hotmail.com","phone":[{"number":"055
+        0709 0497","type":"Landline"}],"address":{"type":"Billing","line1":"Suite
+        185","line2":"61516 Wanda Row","city":"Lake Alanis","region":"England","country":"United
+        Kingdom","postalCode":"ZT87 7TJ"},"status":"Active"},{"name":"Merl Schiller","email":"Merl.Schiller@yahoo.com","phone":[{"number":"024
+        4090 0994","type":"Mobile"},{"number":"055 0751 6721","type":"Landline"}],"address":{"type":"Delivery","line1":"Apt.
+        050","line2":"249 Gorczany Isle","city":"Port Gissellechester","region":"Northern
+        Ireland","country":"United Kingdom","postalCode":"AL50 2EB"},"status":"Active"},{"name":"Lydia
+        Cormier","email":"Lydia_Cormier@hotmail.com","phone":[],"address":{"type":"Billing","line1":"Suite
+        217","line2":"0282 Jonatan Via","city":"Zboncakfurt","region":"Wales","country":"United
+        Kingdom","postalCode":"UV72 6CN"},"status":"Active"}],"registrationNumber":"JSYGRWTQ","taxNumber":"2151105245.0442033","status":"Unknown","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-09-13T04:00:14","metadata":{"isDeleted":false}},{"id":"2f604daa-ce4b-4c69-9e24-88781f95f1db","customerName":"Littel,
+        Collier and Beahan","contactName":"Wendy Reichel","emailAddress":"contact@LittelCollierandBeahan.info","defaultCurrency":"GBP","phone":"0118
+        654 6540","addresses":[{"type":"Delivery","line1":"Apt. 861","line2":"95385
+        Betty Brooks","city":"Lake Rigobertofurt","region":"Scotland","country":"United
+        Kingdom","postalCode":"TF9 5DI"}],"contacts":[{"name":"Wendy Reichel","email":"Wendy_Reichel59@yahoo.com","phone":[],"address":{"type":"Delivery","line1":"Apt.
+        081","line2":"49681 Jamir Pike","city":"Lake Lucile","region":"Wales","country":"United
+        Kingdom","postalCode":"MG7 3MJ"},"status":"Active"},{"name":"Clemens D\u0027Amore","email":"Clemens17@hotmail.com","phone":[{"number":"056
+        6986 5396","type":"Landline"},{"number":"0800 668 2614","type":"Mobile"}],"address":{"type":"Delivery","line1":"Apt.
+        358","line2":"589 Brown Harbor","city":"Howeside","region":"England","country":"United
+        Kingdom","postalCode":"MG52 8YA"},"status":"Active"},{"name":"Freida Kessler","email":"Freida_Kessler@hotmail.com","phone":[{"number":"055
+        6664 9544","type":"Mobile"},{"number":"0500 414201","type":"Landline"}],"address":{"type":"Billing","line1":"Apt.
+        382","line2":"714 Satterfield Springs","city":"Lake Dallasmouth","region":"Scotland","country":"United
+        Kingdom","postalCode":"MX2 5WW"},"status":"Active"}],"registrationNumber":"ME0GDOZF","taxNumber":"4033108416.1855674","status":"Active","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-11-17T14:47:14","metadata":{"isDeleted":false}},{"id":"072499c8-e8c6-4fa3-8dcf-f928cb36e366","customerName":"Marshall
+        Rowe","contactName":"Mack Howell","emailAddress":"Marshall_Rowe@yahoo.com","defaultCurrency":"GBP","phone":"0800
+        915 8693","addresses":[{"type":"Billing","line1":"Suite 094","line2":"309
+        Waters Trafficway","city":"North Stuartstad","region":"England","country":"United
+        Kingdom","postalCode":"UH59 6AQ"},{"type":"Delivery","line1":"Suite 274","line2":"1294
+        Remington Stream","city":"Bartonberg","region":"Scotland","country":"United
+        Kingdom","postalCode":"UL88 4TC"}],"contacts":[{"name":"Mack Howell","email":"Mack.Howell@yahoo.com","phone":[{"number":"01505
+        77130","type":"Landline"}],"address":{"type":"Delivery","line1":"Apt. 487","line2":"32016
+        Jordon River","city":"South Gerrychester","region":"Northern Ireland","country":"United
+        Kingdom","postalCode":"AD86 0FE"},"status":"Active"}],"registrationNumber":"PI2F8DDU","taxNumber":"7064244889.00752","status":"Active","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2023-03-20T11:06:14","metadata":{"isDeleted":false}},{"id":"a651a2ce-6c01-46e6-b932-5261953c55e3","customerName":"Martine
+        Ferry","contactName":"Matilda Schneider","emailAddress":"Martine83@hotmail.com","defaultCurrency":"GBP","phone":"0111
+        303 8515","addresses":[{"type":"Delivery","line1":"Suite 897","line2":"82290
+        Ledner Field","city":"Hilllland","region":"Scotland","country":"United Kingdom","postalCode":"ZO4
+        6SR"}],"contacts":[{"name":"Matilda Schneider","email":"Matilda_Schneider@hotmail.com","phone":[{"number":"0899
+        426 8236","type":"Mobile"},{"number":"0800 838678","type":"Landline"}],"address":{"type":"Delivery","line1":"Suite
+        780","line2":"1848 Declan Cliffs","city":"South Adah","region":"Northern Ireland","country":"United
+        Kingdom","postalCode":"SE06 1YJ"},"status":"Active"},{"name":"Melany O\u0027Keefe","email":"Melany.OKeefe22@yahoo.com","phone":[{"number":"01687
+        769166","type":"Landline"}],"address":{"type":"Delivery","line1":"Suite 292","line2":"206
+        Gardner Tunnel","city":"Port Hershel","region":"England","country":"United
+        Kingdom","postalCode":"IJ5 6MX"},"status":"Active"},{"name":"Bernita Rippin","email":"Bernita24@yahoo.com","phone":[{"number":"0141
+        490 4147","type":"Mobile"},{"number":"0800 054950","type":"Landline"}],"address":{"type":"Delivery","line1":"Apt.
+        880","line2":"532 Bethel Court","city":"New Rachelborough","region":"Wales","country":"United
+        Kingdom","postalCode":"HX4 0DO"},"status":"Active"}],"registrationNumber":"FKCER3XT","taxNumber":"1249507997.994861","status":"Active","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-08-17T16:51:14","metadata":{"isDeleted":false}},{"id":"6913188e-b7f0-48c4-9b38-0348470f1534","customerName":"Mike
+        Glover","contactName":"Sammy Paucek","emailAddress":"Mike_Glover@yahoo.com","defaultCurrency":"GBP","phone":"0986
+        591 9226","addresses":[{"type":"Delivery","line1":"Suite 623","line2":"3330
+        Armstrong Pass","city":"New Devonteberg","region":"England","country":"United
+        Kingdom","postalCode":"CH6 0XK"}],"contacts":[{"name":"Sammy Paucek","email":"Sammy.Paucek@yahoo.com","phone":[{"number":"0500
+        034130","type":"Landline"}],"address":{"type":"Delivery","line1":"Suite 452","line2":"0462
+        Omari Orchard","city":"West Adolphus","region":"England","country":"United
+        Kingdom","postalCode":"VX9 5LQ"},"status":"Unknown"},{"name":"Astrid Lesch","email":"Astrid.Lesch8@hotmail.com","phone":[{"number":"0161
+        425 1335","type":"Mobile"},{"number":"0309 602 8382","type":"Landline"}],"address":{"type":"Delivery","line1":"Apt.
+        019","line2":"68923 Shania Causeway","city":"Sawaynview","region":"Northern
+        Ireland","country":"United Kingdom","postalCode":"JE07 1ZP"},"status":"Active"}],"registrationNumber":"AW3ULNA5","taxNumber":"8202633006.521863","status":"Archived","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2023-03-28T05:18:14","metadata":{"isDeleted":false}},{"id":"string","customerName":"string","contactName":"string","emailAddress":"string","defaultCurrency":"GBP","phone":"string","addresses":[{"type":"Unknown","line1":"string","line2":"string","city":"string","region":"string","country":"string","postalCode":"string"}],"contacts":[{"name":"string","email":"string","phone":[{"number":"\u002B44
+        25691 154789","type":"Primary"}],"address":{"type":"Unknown","line1":"string","line2":"string","city":"string","region":"string","country":"string","postalCode":"string"},"status":"Unknown","modifiedDate":"2022-10-23T00:00:00Z"}],"registrationNumber":"string","taxNumber":"string","status":"Unknown","modifiedDate":"2023-05-18T23:21:48Z","sourceModifiedDate":"2022-10-23T00:00:00Z","metadata":{"isDeleted":false},"supplementalData":{"content":{"property1":{"property1":null,"property2":null},"property2":{"property1":null,"property2":null}}}},{"id":"1f7eb4f7-84ab-4898-b49e-a148b34915c7","customerName":"Vita
+        Shanahan","contactName":"Ceasar Strosin","emailAddress":"Vita_Shanahan@gmail.com","defaultCurrency":"GBP","phone":"055
+        9120 8040","addresses":[{"type":"Delivery","line1":"Apt. 211","line2":"05012
+        Schumm Track","city":"Stehrland","region":"Scotland","country":"United Kingdom","postalCode":"LQ85
+        4TE"}],"contacts":[{"name":"Ceasar Strosin","email":"Ceasar_Strosin16@yahoo.com","phone":[],"address":{"type":"Delivery","line1":"Apt.
+        048","line2":"09762 Rowena Field","city":"Port Alycia","region":"Northern
+        Ireland","country":"United Kingdom","postalCode":"IF7 7DM"},"status":"Active"}],"registrationNumber":"UXMXT1XD","taxNumber":"1721113106.7971497","status":"Active","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-01-09T10:47:14","metadata":{"isDeleted":false}}],"pageNumber":1,"pageSize":100,"totalResults":21,"_links":{"current":{"href":"/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/data/customers"},"self":{"href":"/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/data/customers"}}}'
+  recorded_at: Thu, 18 May 2023 23:22:30 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/push/invoices/string
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 17 May 2023 23:24:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=2592000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - origin
+      Expect-Ct:
+      - max-age=86400, enforce
+      X-Correlation-Id:
+      - 4b6d792510d058195304cdb468ac2947
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7c8f9ccd28272f6b-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"changes":[],"data":{"id":"string","salesOrderRefs":[],"issueDate":"0001-01-01T00:00:00","lineItems":[],"paymentAllocations":[],"withholdingTax":[],"additionalTaxAmount":0,"additionalTaxPercentage":0,"totalTaxAmount":0,"totalAmount":0,"amountDue":0,"status":"Unknown"},"dataType":"invoices","companyId":"9c355f96-c981-4e03-b261-b9ea74ac82cc","pushOperationKey":"6d0d0347-cd3c-4bc3-b75d-185598bcad72","dataConnectionKey":"1a115249-f359-4a2f-a842-54480549c52f","requestedOnUtc":"2023-05-17T23:24:12.3406092Z","completedOnUtc":"2023-05-17T23:24:12.5838381Z","status":"Failed","validation":{"errors":[{"itemId":"string","message":"CustomerRef
+        is required","validatorName":"DatasetEntityReference"}],"warnings":[]},"statusCode":500}'
+  recorded_at: Wed, 17 May 2023 23:24:12 GMT
+recorded_with: VCR 6.1.0

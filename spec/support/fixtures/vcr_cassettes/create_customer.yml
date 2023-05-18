@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/push/customers
+    body:
+      encoding: UTF-8
+      string: '{"id":"string","customerName":"test","contactName":"string","emailAddress":"string","defaultCurrency":"GBP","phone":"string","addresses":[{"type":"Unknown","line1":"string","line2":"string","city":"string","region":"string","country":"string","postalCode":"string"}],"contacts":[{"name":"string","email":"string","phone":[{"number":"+44
+        25691 154789","type":"Primary"}],"address":{"type":"Unknown","line1":"string","line2":"string","city":"string","region":"string","country":"string","postalCode":"string"},"status":"Unknown","modifiedDate":"2022-10-23T00:00:00.000Z"}],"registrationNumber":"string","taxNumber":"string","status":"Unknown","metadata":{"isDeleted":true},"modifiedDate":"2022-10-23T00:00:00.000Z","sourceModifiedDate":"2022-10-23T00:00:00.000Z"}'
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 May 2023 23:22:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=2592000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - origin
+      Expect-Ct:
+      - max-age=86400, enforce
+      X-Correlation-Id:
+      - 633aef330b6ab0c28181f76db93c018b
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7c97d7bb7f02092d-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"changes":[],"data":{"id":"string","customerName":"test","contactName":"string","emailAddress":"string","defaultCurrency":"GBP","phone":"string","addresses":[{"type":"Unknown","line1":"string","line2":"string","city":"string","region":"string","country":"string","postalCode":"string"}],"contacts":[{"name":"string","email":"string","phone":[{"number":"\u002B44
+        25691 154789","type":"Primary"}],"address":{"type":"Unknown","line1":"string","line2":"string","city":"string","region":"string","country":"string","postalCode":"string"},"status":"Unknown","modifiedDate":"2022-10-23T00:00:00Z"}],"registrationNumber":"string","taxNumber":"string","status":"Unknown","modifiedDate":"2023-05-18T23:22:32.3352332Z","sourceModifiedDate":"2022-10-23T00:00:00Z","metadata":{"isDeleted":true}},"dataType":"customers","companyId":"9c355f96-c981-4e03-b261-b9ea74ac82cc","pushOperationKey":"5f9f51e2-761f-4297-a1e5-c0ae962463ba","dataConnectionKey":"1a115249-f359-4a2f-a842-54480549c52f","requestedOnUtc":"2023-05-18T23:22:31.7173147Z","completedOnUtc":"2023-05-18T23:22:32.3566092Z","status":"Success","validation":{"errors":[],"warnings":[]},"statusCode":200}'
+  recorded_at: Thu, 18 May 2023 23:22:32 GMT
+recorded_with: VCR 6.1.0

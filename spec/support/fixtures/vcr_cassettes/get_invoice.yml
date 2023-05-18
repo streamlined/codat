@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/data/invoices/65d7f614-1935-4e73-8d50-da40dc05303d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 May 2023 20:58:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7c97045eac5728f9-LAX
+      Cache-Control:
+      - no-store
+      Strict-Transport-Security:
+      - max-age=2592000
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Apo-Via:
+      - origin,host
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      Expect-Ct:
+      - max-age=86400, enforce
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - origin
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      X-Content-Type-Options:
+      - nosniff
+      X-Correlation-Id:
+      - 3201c2e461b85aae0230925fa572d2b0
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"65d7f614-1935-4e73-8d50-da40dc05303d","invoiceNumber":"180Xfmge","customerRef":{"id":"5092d2fc-cf2a-4bec-a455-5de2cd3332fa","companyName":"Eldora
+        Robel"},"salesOrderRefs":[],"issueDate":"2022-04-27T16:49:15","dueDate":"2022-04-27T16:49:15","modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-01-22T00:11:15","paidOnDate":"2022-04-27T16:49:15","currency":"GBP","currencyRate":1.000000000,"lineItems":[{"description":"Aluminium
+        Silt Bucket x6.16","unitAmount":171.2100000000,"quantity":6.1600000000,"subTotal":1054.65,"taxAmount":105.47,"totalAmount":1160.12,"accountRef":{"id":"dbcaf288-2b39-4b95-8ab3-42202ab15918","name":"Business
+        Current Account"},"taxRateRef":{"id":"6c88aff3-7cb9-4980-a3d3-443e72e02498","name":"Sales
+        Tax (10%)","effectiveTaxRate":10.000000000},"itemRef":{"id":"00491160-6ee5-4d76-9f34-998f00687481"},"trackingCategoryRefs":[],"isDirectIncome":true}],"paymentAllocations":[{"payment":{"id":"83675419-ecea-40bb-b7cc-e08d6a0ad9c3","note":"Payment
+        against invoice 65d7f614-1935-4e73-8d50-da40dc05303d","reference":"65d7f614-1935-4e73-8d50-da40dc05303d","accountRef":{"id":"dbcaf288-2b39-4b95-8ab3-42202ab15918","name":"Business
+        Current Account"},"currency":"GBP","currencyRate":1,"paidOnDate":"2022-04-27T16:49:15","totalAmount":1160.12},"allocation":{"currency":"GBP","currencyRate":1,"allocatedOnDate":"2022-04-27T16:49:15","totalAmount":-1160.12}}],"withholdingTax":[],"totalDiscount":0,"subTotal":1054.65,"additionalTaxAmount":0,"additionalTaxPercentage":0,"totalTaxAmount":105.47,"totalAmount":1160.12,"amountDue":0,"discountPercentage":0,"status":"Paid","metadata":{"isDeleted":false}}'
+  recorded_at: Thu, 18 May 2023 20:58:14 GMT
+recorded_with: VCR 6.1.0

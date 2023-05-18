@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/push/creditNotes
+    body:
+      encoding: UTF-8
+      string: '{"creditNoteNumber":"09/03 17.15","note":"credit note 20230309 17.15","status":"Submitted","customerRef":{"id":"80000002-1674552702"},"currency":"USD","currencyRate":1,"subTotal":10.2,"issueDate":"2023-03-09T02:21:26.726327+00:00","lineItems":[{"itemRef":{"id":"80000004-1675280003","name":"test
+        income item 1"},"quantity":1,"subTotal":1.25,"taxAmount":0,"unitAmount":1.25,"description":"banana","totalAmount":1.25}],"totalAmount":1.25,"totalDiscount":0,"totalTaxAmount":0,"discountPercentage":0,"remainingCredit":0}'
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 May 2023 20:30:04 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=2592000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - origin
+      Expect-Ct:
+      - max-age=86400, enforce
+      X-Correlation-Id:
+      - 11267288ef02ad57c1163a8bb8ea847e
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7c96db1598462b9d-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"changes":[],"data":{"id":"d62c657a-ebea-457f-9b8b-158fbee4447f","creditNoteNumber":"09/03
+        17.15","customerRef":{"id":"80000002-1674552702"},"withholdingTax":[],"totalAmount":1.25,"totalDiscount":0,"subTotal":10.2,"additionalTaxAmount":0,"additionalTaxPercentage":0,"totalTaxAmount":0,"discountPercentage":0,"remainingCredit":0,"status":"Submitted","issueDate":"2023-03-09T02:21:26.726327Z","currency":"USD","currencyRate":1.0,"lineItems":[{"description":"banana","unitAmount":1.25,"quantity":1.0,"subTotal":1.25,"taxAmount":0,"totalAmount":1.25,"itemRef":{"id":"80000004-1675280003","name":"test
+        income item 1"},"isDirectIncome":false}],"paymentAllocations":[],"modifiedDate":"2023-05-18T20:30:04.2117281Z","note":"credit
+        note 20230309 17.15"},"dataType":"creditNotes","companyId":"9c355f96-c981-4e03-b261-b9ea74ac82cc","pushOperationKey":"953eddaf-80a7-42a8-b4c1-e7c5f8937d23","dataConnectionKey":"1a115249-f359-4a2f-a842-54480549c52f","requestedOnUtc":"2023-05-18T20:30:03.7594335Z","completedOnUtc":"2023-05-18T20:30:04.2275534Z","status":"Success","validation":{"errors":[],"warnings":[]},"statusCode":200}'
+  recorded_at: Thu, 18 May 2023 20:30:04 GMT
+recorded_with: VCR 6.1.0

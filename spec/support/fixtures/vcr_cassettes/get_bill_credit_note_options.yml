@@ -1,0 +1,172 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/options/billCreditNotes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 May 2023 20:37:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7c96e56adecb090e-LAX
+      Cache-Control:
+      - no-store
+      Strict-Transport-Security:
+      - max-age=2592000
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Apo-Via:
+      - origin,host
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      Expect-Ct:
+      - max-age=86400, enforce
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - origin
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      X-Content-Type-Options:
+      - nosniff
+      X-Correlation-Id:
+      - 38b0422414987f08cddb59852dce9fd1
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"type":"Object","displayName":"Accounts Payable Credit Note","description":"A
+        bill credit note can be thought of as a voucher issued by a supplier. It can
+        be applied against one or multiple bills to reduce their balance.","properties":{"billCreditNoteNumber":{"type":"String","displayName":"Credit
+        Note Number","description":"User friendly reference for the credit note","required":true},"supplierRef":{"type":"Object","displayName":"Supplier
+        Reference","description":"Reference to the supplier the credit note has been
+        issued by","properties":{"id":{"type":"String","displayName":"Identifier","description":"The
+        reference identifier for the supplier","required":true},"supplierName":{"type":"String","displayName":"Name","description":"The
+        name of the supplier referenced by the identifier","required":true}},"required":true},"withholdingTax":{"type":"Array","displayName":"Withholding
+        Tax","description":"A collection of tax deductions","properties":{"name":{"type":"String","displayName":"Name","description":"Name
+        of the deduction","required":true},"amount":{"type":"Number","displayName":"Amount","description":"Deduction
+        amount","required":true}},"required":true},"totalAmount":{"type":"Number","displayName":"Total
+        Amount","description":"The total amount of the credit note, inclusive of discounts
+        and tax","required":true},"totalDiscount":{"type":"Number","displayName":"Discount
+        Amount","description":"The value, in the given credit note currency, of any
+        discounts applied","required":true},"subTotal":{"type":"Number","displayName":"Sub
+        Total Amount","description":"The amount of the credit note, inclusive of discounts
+        but exclusive of tax","required":true},"totalTaxAmount":{"type":"Number","displayName":"Tax
+        Amount","description":"The amount of tax for the credit note","required":true},"discountPercentage":{"type":"Number","displayName":"Discount
+        Percentage","description":"The percentage rate of any discount that has been
+        applied","required":true},"remainingCredit":{"type":"Number","displayName":"Remaining
+        Credit","description":"Unused balance of total amount originally raised","required":true},"status":{"type":"String","displayName":"Credit
+        Note Status","description":"The current state of a credit note","required":true},"issueDate":{"type":"DateTime","displayName":"Issue
+        Date","description":"The date the credit note was issued","required":true},"allocatedOnDate":{"type":"DateTime","displayName":"Allocated
+        On Date","description":"The date the credit note was allocated","required":true},"currency":{"type":"String","displayName":"Currency","description":"Currency
+        of the credit note","required":true},"currencyRate":{"type":"Number","displayName":"Currency
+        Exchange Rate","description":"The exchange rate between the currency of the
+        credit note and the base currency of the company","required":true},"lineItems":{"type":"Array","displayName":"Line
+        items","description":"A collection of lines that detail items related to the
+        credit note","properties":{"description":{"type":"String","displayName":"Description","description":"Friendly
+        name of the goods or services credited","required":true},"unitAmount":{"type":"Number","displayName":"Unit
+        Amount","description":"The price of each unit of goods or services","required":true},"quantity":{"type":"Number","displayName":"Quantity","description":"The
+        number of units of goods or services credited","required":true},"discountAmount":{"type":"Number","displayName":"Discount
+        Amount","description":"The value, in the given credit note currency, of any
+        discounts applied","required":true},"subTotal":{"type":"Number","displayName":"Sub
+        Total Amount","description":"The amount of the line, inclusive of discounts
+        but exclusive of tax","required":true},"taxAmount":{"type":"Number","displayName":"Tax
+        Amount","description":"The amount of tax for the line","required":true},"totalAmount":{"type":"Number","displayName":"Total
+        Amount","description":"The total amount of the line, inclusive of discounts
+        and tax","required":true},"accountRef":{"type":"Object","displayName":"Nominal
+        Account Reference","description":"Reference to the nominal account the line
+        item is linked to","properties":{"id":{"type":"String","displayName":"Account
+        ID","description":"The identifier for the account","required":true},"name":{"type":"String","displayName":"Name","description":"Name
+        of the account","required":true}},"required":true},"discountPercentage":{"type":"Number","displayName":"Discount
+        Percentage","description":"The percentage rate of any discount that has been
+        applied","required":true},"taxRateRef":{"type":"Object","displayName":"Tax
+        Rate Reference","description":"Reference to the tax rate code the line item
+        is linked to","properties":{"id":{"type":"String","displayName":"Identifier","description":"The
+        reference identifier for the tax rate","required":true},"name":{"type":"String","displayName":"Name","description":"The
+        name of the tax rate referenced by the identifier","required":true},"effectiveTaxRate":{"type":"Number","displayName":"Effective
+        Tax Rate","description":"The total applied tax percentage, including compounding
+        details","required":true}},"required":true},"itemRef":{"type":"Object","displayName":"Item
+        Reference","description":"Reference to the product or service type, or inventory
+        item, the line item is linked to","properties":{"id":{"type":"String","displayName":"Identifier","description":"The
+        reference identifier for the item","required":true},"name":{"type":"String","displayName":"Name","description":"The
+        name of the item referenced by the identifier","required":true}},"required":true},"trackingCategoryRefs":{"type":"Array","displayName":"Tracking
+        Category References","description":"A collection of categories this line item
+        is being tracked against","properties":{"id":{"type":"String","displayName":"Identifier","description":"The
+        identifier for the item, unique per tracking category","required":true},"name":{"type":"String","displayName":"Tracking
+        Category Name","description":"The name of the category referenced by the identifier","required":true}},"required":true},"tracking":{"type":"Object","displayName":"Accounts
+        Payable Tracking","description":"A collection of items this line item is being
+        tracked against","properties":{"categoryRefs":{"type":"Array","displayName":"Category
+        References","description":"A collection of categories this line item is being
+        tracked against","properties":{"id":{"type":"String","displayName":"Identifier","description":"The
+        identifier for the item, unique per tracking category","required":true},"name":{"type":"String","displayName":"Tracking
+        Category Name","description":"The name of the category referenced by the identifier","required":true}},"required":true},"customerRef":{"type":"Object","displayName":"Customer
+        Reference","description":"Reference to the customer this line item is being
+        tracked against","properties":{"id":{"type":"String","displayName":"Identifier","description":"The
+        reference identifier for the customer","required":true},"companyName":{"type":"String","displayName":"Name","description":"The
+        name of the customer referenced by the identifier","required":true}},"required":true},"projectRef":{"type":"Object","displayName":"Project
+        Reference","description":"Reference to the project this line item is being
+        tracked against","properties":{"id":{"type":"String","displayName":"Identifier","description":"The
+        reference identifier for the Project","required":true},"name":{"type":"String","displayName":"Name","description":"The
+        name of the Project referenced by the identifier","required":true}},"required":true},"isBilledTo":{"type":"String","displayName":"Is
+        Billed To","description":"The type of item this line item is billed to.","required":true},"isRebilledTo":{"type":"String","displayName":"Is
+        Rebilled To","description":"The type of item this line item is billed to","required":true}},"required":true}},"required":true},"paymentAllocations":{"type":"Array","displayName":"Payment
+        Allocations","description":"A collection of payments that are allocated to
+        (i.e. spend) the credit note","properties":{"payment":{"type":"Object","displayName":"Payment","description":"The
+        payment to be allocated","properties":{"id":{"type":"String","displayName":"Identifier","description":"The
+        identifier for the allocated payment","required":true},"note":{"type":"String","displayName":"Note","description":"Any
+        additional text based information associated with the allocated payment","required":true},"reference":{"type":"String","displayName":"Reference","description":"Reference
+        associated with the allocated payment","required":true},"accountRef":{"type":"Object","displayName":"Account
+        Reference","description":"Reference to the account associated with the allocated
+        payment","properties":{"id":{"type":"String","displayName":"Account ID","description":"The
+        identifier for the account","required":true},"name":{"type":"String","displayName":"Name","description":"Name
+        of the account","required":true}},"required":true},"currency":{"type":"String","displayName":"Currency","description":"The
+        currency for the payment","required":true},"currencyRate":{"type":"Number","displayName":"Currency
+        Exchange Rate","description":"The exchange rate between the currency of the
+        allocated payment and the currency of the base company","required":true},"paidOnDate":{"type":"DateTime","displayName":"Paid
+        On Date","description":"The date the payment was paid","required":true},"totalAmount":{"type":"Number","displayName":"Total
+        Amount","description":"The total amount that has been paid","required":true}},"required":true},"allocation":{"type":"Object","displayName":"Allocation","description":"The
+        allocation information","properties":{"currency":{"type":"String","displayName":"Currency","description":"The
+        currency of the transaction","required":true},"currencyRate":{"type":"Number","displayName":"Currency
+        Exchange Rate","description":"The exchange rate between the currency of the
+        allocated payment and the currency of the transaction","required":true},"allocatedOnDate":{"type":"DateTime","displayName":"Allocated
+        On Date","description":"The date the payment was allocated","required":true},"totalAmount":{"type":"Number","displayName":"Total
+        Amount","description":"The total amount that has been allocated","required":true}},"required":true}},"required":true},"metadata":{"type":"Object","displayName":"Metadata","description":"Miscellaneous
+        data about the item","properties":{"isDeleted":{"type":"Boolean","displayName":"IsDeleted","description":"A
+        boolean to indicate whether the object has been deleted","required":true}},"required":true},"note":{"type":"String","displayName":"Note","description":"Note
+        about the credit note","required":true}},"required":true}'
+  recorded_at: Thu, 18 May 2023 20:37:06 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/push/journalEntries
+    body:
+      encoding: UTF-8
+      string: '{"description":"record level description","postedOn":"2023-02-23T19:49:16.052Z","createdOn":"2023-02-22T19:49:16.052Z","updatedOn":"2023-02-21T19:49:16.052Z","journalRef":{"id":"12"},"journalLines":[{"description":"journalLines.description
+        debit","netAmount":23.02,"currency":"USD","accountRef":{"id":"80000019-1671793811","name":"Office
+        Supplies"},"tracking":{"recordRefs":[{"id":"80000001-1674553252","dataType":"string"}]}},{"description":"journalLines.description
+        credit","netAmount":-23.02,"currency":"USD","accountRef":{"id":"8000001E-1671793811","name":"Utilities"},"tracking":{"recordRefs":[{"id":"80000002-1674553271","dataType":"trackingCategories"}]}}],"recordRef":{"id":"string","dataType":"string"},"metadata":{"isDeleted":true}}'
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 May 2023 23:05:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=2592000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - origin
+      Expect-Ct:
+      - max-age=86400, enforce
+      X-Correlation-Id:
+      - a9b0797310ba25f4cb678fa8c51c07eb
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7c97bed18e137c92-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"changes":[],"data":{"id":"18cb0f81-be2a-41a8-8461-3c53c95b1991","description":"record
+        level description","postedOn":"2023-02-23T19:49:16.052Z","createdOn":"2023-02-22T19:49:16.052Z","updatedOn":"2023-02-21T19:49:16.052Z","journalRef":{"id":"12"},"journalLines":[{"description":"journalLines.description
+        debit","netAmount":23.02,"currency":"USD","accountRef":{"id":"80000019-1671793811","name":"Office
+        Supplies"},"tracking":{"recordRefs":[{"id":"80000001-1674553252","dataType":"string"}]}},{"description":"journalLines.description
+        credit","netAmount":-23.02,"currency":"USD","accountRef":{"id":"8000001E-1671793811","name":"Utilities"},"tracking":{"recordRefs":[{"id":"80000002-1674553271","dataType":"trackingCategories"}]}}],"modifiedDate":"2023-05-18T23:05:31.5661889Z","recordRef":{"id":"string","dataType":"string"},"metadata":{"isDeleted":true}},"dataType":"journalEntries","companyId":"9c355f96-c981-4e03-b261-b9ea74ac82cc","pushOperationKey":"c1efcb48-c022-479a-af49-4b3273e7f663","dataConnectionKey":"1a115249-f359-4a2f-a842-54480549c52f","requestedOnUtc":"2023-05-18T23:05:31.267693Z","completedOnUtc":"2023-05-18T23:05:31.5859912Z","status":"Success","validation":{"errors":[],"warnings":[]},"statusCode":200}'
+  recorded_at: Thu, 18 May 2023 23:05:31 GMT
+recorded_with: VCR 6.1.0

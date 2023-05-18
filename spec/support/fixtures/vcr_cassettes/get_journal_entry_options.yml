@@ -1,0 +1,103 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/options/journalEntries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 May 2023 23:05:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7c97becbdbe22f6f-LAX
+      Cache-Control:
+      - no-store
+      Strict-Transport-Security:
+      - max-age=2592000
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Apo-Via:
+      - origin,host
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      Expect-Ct:
+      - max-age=86400, enforce
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - origin
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      X-Content-Type-Options:
+      - nosniff
+      X-Correlation-Id:
+      - 217dd6b0b137431be3d2ce76ec3974a7
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"type":"Object","displayName":"JournalEntry","properties":{"description":{"type":"String","displayName":"Description","description":"An
+        optional top level description for the journal entry","required":true},"postedOn":{"type":"DateTime","displayName":"Posted
+        On","description":"The date the entry was posted in the originating system","required":true},"createdOn":{"type":"DateTime","displayName":"Created
+        On","description":"The date the entry was created in the originating system","required":true},"updatedOn":{"type":"DateTime","displayName":"Updated
+        On","description":"The date in which the journal was last updated in the originating
+        system","required":true},"journalRef":{"type":"Object","displayName":"Journal
+        Reference","description":"Reference to the journal in which this journal entry
+        was created","properties":{"id":{"type":"String","displayName":"Identifier","description":"The
+        reference identifier for the journal","required":true},"name":{"type":"String","displayName":"Name","description":"The
+        name of the journal","required":true}},"required":true},"journalLines":{"type":"Array","displayName":"Journal
+        Lines","description":"A collection of detail lines that represent the transactions
+        associated in this entry","properties":{"description":{"type":"String","displayName":"Description","description":"The
+        description for the journal line","required":true},"netAmount":{"type":"Number","displayName":"Net
+        Amount","description":"The amount for the journal line, excluding tax","required":true},"currency":{"type":"String","displayName":"Currency","description":"The
+        currency for the line","required":true},"accountRef":{"type":"Object","displayName":"Nominal
+        Account Reference","description":"Reference to the nominal account the line
+        is linked to","properties":{"id":{"type":"String","displayName":"Account ID","description":"The
+        identifier for the account","required":true},"name":{"type":"String","displayName":"Name","description":"Name
+        of the account","required":true}},"required":true},"tracking":{"type":"Object","displayName":"Tracking","description":"Information
+        this item is being tracked against","properties":{"recordRefs":{"type":"Array","displayName":"Record
+        References","description":"A collection of records this item is being tracked
+        against","properties":{"id":{"type":"String","displayName":"Identifier","description":"The
+        reference identifier for the record","required":true},"dataType":{"type":"String","displayName":"DataType","description":"The
+        name of the data type for which the Id is valid.","required":true}},"required":true}},"required":true}},"required":true},"recordRef":{"type":"Object","displayName":"Record
+        Reference","description":"Reference to the record for which this journal entry
+        was created","properties":{"id":{"type":"String","displayName":"Identifier","description":"The
+        reference identifier for the record","required":true},"dataType":{"type":"String","displayName":"DataType","description":"The
+        name of the data type for which the Id is valid.","required":true}},"required":true},"metadata":{"type":"Object","displayName":"Metadata","description":"Miscellaneous
+        data about the item","properties":{"isDeleted":{"type":"Boolean","displayName":"IsDeleted","description":"A
+        boolean to indicate whether the object has been deleted","required":true}},"required":true}},"required":true}'
+  recorded_at: Thu, 18 May 2023 23:05:30 GMT
+recorded_with: VCR 6.1.0

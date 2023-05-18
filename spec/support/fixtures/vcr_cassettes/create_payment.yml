@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/push/payments
+    body:
+      encoding: UTF-8
+      string: '{"customerRef":{"id":"80000002-1674552702","companyName":"string"},"accountRef":{"id":"8000002E-1675267199","name":"Undeposited
+        Funds"},"paymentMethodRef":{"id":"string","name":"string"},"totalAmount":28,"currency":"USD","currencyRate":1,"date":"2023-02-10T11:47:04.792Z","note":"note
+        14/02 1147","lines":[{"amount":28,"links":[{"type":"Invoice","id":"181-1676374586","amount":-28,"currencyRate":1}],"allocatedOnDate":"2023-02-11T11:47:04.792Z"}],"reference":"ref
+        14/02 1147"}'
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 May 2023 17:49:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=2592000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - origin
+      Expect-Ct:
+      - max-age=86400, enforce
+      X-Correlation-Id:
+      - 943df7f2e73f1b77716761221aacd030
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7c95f08f99462ae7-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"changes":[],"data":{"id":"b2cb1a3e-7611-4afb-87a8-036b2d00974f","customerRef":{"id":"80000002-1674552702","companyName":"string"},"accountRef":{"id":"8000002E-1675267199","name":"Undeposited
+        Funds"},"paymentMethodRef":{"id":"string","name":"string"},"totalAmount":28.0,"currency":"USD","currencyRate":1.0,"date":"2023-02-10T11:47:04.792Z","note":"note
+        14/02 1147","lines":[{"amount":28.0,"links":[{"type":"Invoice","id":"181-1676374586","amount":-28.0,"currencyRate":1.0}],"allocatedOnDate":"2023-02-11T11:47:04.792Z"}],"modifiedDate":"2023-05-18T17:49:58.0623565Z","reference":"ref
+        14/02 1147"},"dataType":"payments","companyId":"9c355f96-c981-4e03-b261-b9ea74ac82cc","pushOperationKey":"07429b31-7ab8-4913-8e10-dc7257a401d7","dataConnectionKey":"1a115249-f359-4a2f-a842-54480549c52f","requestedOnUtc":"2023-05-18T17:49:57.6638164Z","completedOnUtc":"2023-05-18T17:49:58.0794841Z","status":"Success","validation":{"errors":[],"warnings":[]},"statusCode":200}'
+  recorded_at: Thu, 18 May 2023 17:49:58 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/data/purchaseOrders
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 May 2023 23:13:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7c97ca022df408fc-LAX
+      Cache-Control:
+      - no-store
+      Strict-Transport-Security:
+      - max-age=2592000
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Apo-Via:
+      - origin,host
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      Expect-Ct:
+      - max-age=86400, enforce
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - origin
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      X-Content-Type-Options:
+      - nosniff
+      X-Correlation-Id:
+      - 37e0e2410caf21f96574e388058a85be
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"id":"7e2380af-b51f-4393-92d7-6ff0382da26c","purchaseOrderNumber":"89443280","issueDate":"2020-10-24T00:00:00Z","paymentDueDate":"2021-09-13T00:00:00Z","expectedDeliveryDate":"2021-01-29T00:00:00Z","deliveryDate":"2021-02-02T00:00:00Z","note":"purchaseorder
+        with 1 line items, totalling 1138.5","shipTo":{"contact":{"name":"Carlton
+        Innovations","email":"sales@carltoninnov.com","phone":""},"address":{"type":"Billing","line1":"1
+        Carolyns Circle","line2":"","city":"Dallas","region":"Texas","country":"USA","postalCode":"511210"}},"supplierRef":{"id":"7ff6add1-b0e7-496f-b655-48e20c8fdb2e"},"status":"Closed","currency":"GBP","currencyRate":1.0,"lineItems":[{"description":"Electric
+        Eye purchase","accountRef":{"id":"13931cbf-ea06-4d6e-9538-a8457fa66011"},"itemRef":{"id":"9409d23d-1011-432e-98a4-591fcd8d5404"},"trackingCategoryRefs":[],"unitAmount":115.00,"quantity":9.00,"discountAmount":0,"discountPercentage":0,"subTotal":1035.00,"taxAmount":103.50,"taxRateRef":{"id":"6c88aff3-7cb9-4980-a3d3-443e72e02498","name":"Sales
+        Tax (10%)","effectiveTaxRate":10.000000000},"totalAmount":1138.50}],"totalDiscount":0,"subTotal":1035.00,"totalTaxAmount":103.50,"totalAmount":1138.50,"modifiedDate":"2023-05-18T23:12:56Z","sourceModifiedDate":"2020-10-25T06:37:33Z","metadata":{"isDeleted":false}}],"pageNumber":1,"pageSize":100,"totalResults":1,"_links":{"current":{"href":"/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/data/purchaseOrders"},"self":{"href":"/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/data/purchaseOrders"}}}'
+  recorded_at: Thu, 18 May 2023 23:13:09 GMT
+recorded_with: VCR 6.1.0

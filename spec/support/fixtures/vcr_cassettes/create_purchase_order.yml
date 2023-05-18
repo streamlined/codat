@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/push/purchaseOrders
+    body:
+      encoding: UTF-8
+      string: '{"id":"7e2380af-b51f-4393-92d7-6ff0382da26c","purchaseOrderNumber":"89443280","issueDate":"2020-10-24T00:00:00Z","deliveryDate":"2021-02-02T00:00:00Z","expectedDeliveryDate":"2021-01-29T00:00:00Z","paymentDueDate":"2021-09-13T00:00:00Z","note":"purchaseorder
+        with 1 line items, totalling 1138.5","supplierRef":{"id":"7ff6add1-b0e7-496f-b655-48e20c8fdb2e","supplierName":"Carlton
+        Innovations"},"shipTo":{"contact":{"name":"Carlton Innovations","email":"sales@carltoninnov.com","phone":""},"address":{"type":"Billing","line1":"1
+        Carolyns Circle","line2":"","city":"Dallas","region":"Texas","country":"USA","postalCode":"511210"}},"status":"Closed","currency":"GBP","currencyRate":1,"lineItems":[{"description":"Electric
+        Eye purchase","accountRef":{"id":"13931cbf-ea06-4d6e-9538-a8457fa66011","name":"Cost
+        of Goods Sold"},"itemRef":{"id":"9409d23d-1011-432e-98a4-591fcd8d5404","name":"ACME
+        Electric Eye"},"trackingCategoryRefs":[],"unitAmount":115,"quantity":9,"discountAmount":0,"discountPercentage":0,"subTotal":1035,"taxAmount":103.5,"taxRateRef":{"id":"6c88aff3-7cb9-4980-a3d3-443e72e02498","name":"ACME
+        Sales Tax (10%)"},"totalAmount":1138.5}],"totalDiscount":0,"subTotal":1035,"totalTaxAmount":103.5,"totalAmount":1138.5,"modifiedDate":"2020-11-17T21:11:20Z","sourceModifiedDate":"2020-10-25T06:37:33Z"}'
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 May 2023 23:15:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=2592000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - origin
+      Expect-Ct:
+      - max-age=86400, enforce
+      X-Correlation-Id:
+      - bd1cb6c90e2cf25bd6ddae0875383b4c
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7c97cda0aacd2b64-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"changes":[],"data":{"id":"7e2380af-b51f-4393-92d7-6ff0382da26c","purchaseOrderNumber":"89443280","issueDate":"2020-10-24T00:00:00Z","paymentDueDate":"2021-09-13T00:00:00Z","expectedDeliveryDate":"2021-01-29T00:00:00Z","deliveryDate":"2021-02-02T00:00:00Z","note":"purchaseorder
+        with 1 line items, totalling 1138.5","shipTo":{"contact":{"name":"Carlton
+        Innovations","email":"sales@carltoninnov.com","phone":""},"address":{"type":"Billing","line1":"1
+        Carolyns Circle","line2":"","city":"Dallas","region":"Texas","country":"USA","postalCode":"511210"}},"supplierRef":{"id":"7ff6add1-b0e7-496f-b655-48e20c8fdb2e","supplierName":"Carlton
+        Innovations"},"status":"Closed","currency":"GBP","currencyRate":1.0,"lineItems":[{"description":"Electric
+        Eye purchase","accountRef":{"id":"13931cbf-ea06-4d6e-9538-a8457fa66011","name":"Cost
+        of Goods Sold"},"itemRef":{"id":"9409d23d-1011-432e-98a4-591fcd8d5404","name":"ACME
+        Electric Eye"},"trackingCategoryRefs":[],"unitAmount":115.0,"quantity":9.0,"discountAmount":0,"discountPercentage":0,"subTotal":1035.0,"taxAmount":103.5,"taxRateRef":{"id":"6c88aff3-7cb9-4980-a3d3-443e72e02498","name":"ACME
+        Sales Tax (10%)"},"totalAmount":1138.5}],"totalDiscount":0,"subTotal":1035.0,"totalTaxAmount":103.5,"totalAmount":1138.5,"modifiedDate":"2023-05-18T23:15:38.69433Z","sourceModifiedDate":"2020-10-25T06:37:33Z"},"dataType":"purchaseOrders","companyId":"9c355f96-c981-4e03-b261-b9ea74ac82cc","pushOperationKey":"2bdddba2-a76c-444b-bed5-287aa2445646","dataConnectionKey":"1a115249-f359-4a2f-a842-54480549c52f","requestedOnUtc":"2023-05-18T23:15:38.258393Z","completedOnUtc":"2023-05-18T23:15:38.7090972Z","status":"Success","validation":{"errors":[],"warnings":[]},"statusCode":200}'
+  recorded_at: Thu, 18 May 2023 23:15:38 GMT
+recorded_with: VCR 6.1.0

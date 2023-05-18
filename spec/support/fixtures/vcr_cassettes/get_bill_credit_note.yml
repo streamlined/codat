@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/data/billCreditNotes/6a0e9dfb-87b0-47d3-aaaf-9753ae9e757d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 May 2023 20:41:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7c96ec0a48802ac4-LAX
+      Cache-Control:
+      - no-store
+      Strict-Transport-Security:
+      - max-age=2592000
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Apo-Via:
+      - origin,host
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      Expect-Ct:
+      - max-age=86400, enforce
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - origin
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      X-Content-Type-Options:
+      - nosniff
+      X-Correlation-Id:
+      - 8c106fa47ef36f177b06ad641eb7f080
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"6a0e9dfb-87b0-47d3-aaaf-9753ae9e757d","billCreditNoteNumber":"14763237","supplierRef":{"id":"67C6A7A1-5E84-4AC4-B950-24A114E379D0"},"withholdingTax":[],"totalAmount":693.00,"totalDiscount":0,"subTotal":0,"totalTaxAmount":0,"discountPercentage":0,"remainingCredit":693.00,"status":"Submitted","issueDate":"2019-02-18T16:03:07Z","currency":"USD","lineItems":[{"description":"AcmeMagnet","unitAmount":25.000000000,"quantity":4.000000000,"discountAmount":0,"subTotal":100.00,"taxAmount":10.00,"totalAmount":110.00,"accountRef":{"id":"3f267b10-757d-44c0-bef9-20f70cc8fbe3"},"taxRateRef":{"id":"6c88aff3-7cb9-4980-a3d3-443e72e02498","name":"Sales
+        Tax (10%)","effectiveTaxRate":10.000000000},"itemRef":{"id":"3"},"trackingCategoryRefs":[{"id":"costcode_2"},{"id":"department_1"}],"tracking":{"categoryRefs":[{"id":"costcode_2"},{"id":"department_1"}],"isBilledTo":"Unknown","isRebilledTo":"Unknown","recordRefs":[]}},{"description":"ACMEDisintegratingPistol","unitAmount":25.000000000,"quantity":3.000000000,"discountAmount":0,"subTotal":75.00,"taxAmount":7.50,"totalAmount":82.50,"accountRef":{"id":"3f267b10-757d-44c0-bef9-20f70cc8fbe3"},"taxRateRef":{"id":"6c88aff3-7cb9-4980-a3d3-443e72e02498","name":"Sales
+        Tax (10%)","effectiveTaxRate":10.000000000},"itemRef":{"id":"3abf0883-03f7-44c6-bc15-1372522d25e1"},"trackingCategoryRefs":[]},{"description":"ACMEWhippedCreamDispenser","unitAmount":52.000000000,"quantity":6.000000000,"discountAmount":0,"subTotal":312.00,"taxAmount":31.20,"totalAmount":343.20,"accountRef":{"id":"3f267b10-757d-44c0-bef9-20f70cc8fbe3"},"taxRateRef":{"id":"6c88aff3-7cb9-4980-a3d3-443e72e02498","name":"Sales
+        Tax (10%)","effectiveTaxRate":10.000000000},"itemRef":{"id":"3691f3d9-0ff7-4358-8a93-bed31c1b4b03"},"trackingCategoryRefs":[]},{"description":"ACMEJetPropelledPogoStick","unitAmount":130.000000000,"quantity":1.000000000,"discountAmount":0,"subTotal":130.00,"taxAmount":27.30,"totalAmount":157.30,"accountRef":{"id":"3f267b10-757d-44c0-bef9-20f70cc8fbe3"},"taxRateRef":{"id":"d606732b-db18-44d7-823b-7f15f42c32ea"},"itemRef":{"id":"075410d4-7edc-4936-ba52-9e1e43cbe300"},"trackingCategoryRefs":[]}],"paymentAllocations":[],"modifiedDate":"2023-05-18T20:37:08Z","metadata":{"isDeleted":false},"note":"Track
+        separately"}'
+  recorded_at: Thu, 18 May 2023 20:41:37 GMT
+recorded_with: VCR 6.1.0

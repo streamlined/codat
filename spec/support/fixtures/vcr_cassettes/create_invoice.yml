@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/push/invoices
+    body:
+      encoding: UTF-8
+      string: '{"invoiceNumber":"18/04 15.26","note":"invoice push 20230418 15.26","customerRef":{"id":"80000002-1674552702","companyName":"Test
+        Customer 1"},"salesOrderRefs":[{"id":"string","dataType":"string"}],"issueDate":"2023-04-18T11:09:01.438Z","dueDate":"2023-05-24T11:09:01.438Z","modifiedDate":"2023-02-14T11:09:01.438Z","sourceModifiedDate":"2023-02-14T11:09:01.438Z","paidOnDate":"2023-02-10T11:09:01.438Z","currency":"USD","currencyRate":1,"lineItems":[{"description":"lineItems.description
+        1","unitAmount":15,"quantity":2,"discountAmount":0,"subTotal":30,"taxAmount":0,"totalAmount":30,"accountRef":{"id":"80000006-1671793811","name":"Consulting
+        Income"},"discountPercentage":0,"taxRateRef":{"id":"80000002-1671793802","name":"Non
+        (TAX CODE)","effectiveTaxRate":0},"itemRef":{"id":"80000004-1675280003","name":"test
+        income item 1"},"trackingCategoryRefs":[{"id":"80000004-1674554660","name":"Class
+        3"}]}],"paymentAllocations":[{"payment":{"id":"80000004-1789341990","note":"string","reference":"string","accountRef":{"id":"string","name":"string"},"currency":"USD","currencyRate":1,"paidOnDate":"2023-02-14T11:09:01.438Z","totalAmount":725},"allocation":{"currency":"USD","currencyRate":1,"allocatedOnDate":"2023-02-14T11:09:01.438Z","totalAmount":725}}],"withholdingTax":[{"name":"string","amount":0}],"totalDiscount":0,"subTotal":30,"additionalTaxAmount":0,"additionalTaxPercentage":0,"totalTaxAmount":0,"totalAmount":30,"amountDue":87326532,"discountPercentage":0,"status":"Submitted"}'
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 17 May 2023 22:41:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=2592000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - origin
+      Expect-Ct:
+      - max-age=86400, enforce
+      X-Correlation-Id:
+      - 7fa962f64497af43017ae929b2c7b71c
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7c8f5d882c520fb5-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"changes":[],"data":{"invoiceNumber":"18/04 15.26","customerRef":{"id":"80000002-1674552702","companyName":"Test
+        Customer 1"},"salesOrderRefs":[{"id":"string","dataType":"string"}],"issueDate":"2023-04-18T11:09:01.438Z","dueDate":"2023-05-24T11:09:01.438Z","modifiedDate":"2023-02-14T11:09:01.438Z","sourceModifiedDate":"2023-02-14T11:09:01.438Z","paidOnDate":"2023-02-10T11:09:01.438Z","currency":"USD","currencyRate":1.0,"lineItems":[{"description":"lineItems.description
+        1","unitAmount":15.0,"quantity":2.0,"discountAmount":0,"subTotal":30.0,"taxAmount":0,"totalAmount":30.0,"accountRef":{"id":"80000006-1671793811","name":"Consulting
+        Income"},"discountPercentage":0,"taxRateRef":{"id":"80000002-1671793802","name":"Non
+        (TAX CODE)","effectiveTaxRate":0},"itemRef":{"id":"80000004-1675280003","name":"test
+        income item 1"},"trackingCategoryRefs":[{"id":"80000004-1674554660","name":"Class
+        3"}],"tracking":{"categoryRefs":[{"id":"80000004-1674554660","name":"Class
+        3"}],"isBilledTo":"Unknown","isRebilledTo":"Unknown","recordRefs":[]},"isDirectIncome":false}],"paymentAllocations":[{"payment":{"id":"80000004-1789341990","note":"string","reference":"string","accountRef":{"id":"string","name":"string"},"currency":"USD","currencyRate":1.0,"paidOnDate":"2023-02-14T11:09:01.438Z","totalAmount":725.0},"allocation":{"currency":"USD","currencyRate":1.0,"allocatedOnDate":"2023-02-14T11:09:01.438Z","totalAmount":725.0}}],"withholdingTax":[{"name":"string","amount":0}],"totalDiscount":0,"subTotal":30.0,"additionalTaxAmount":0,"additionalTaxPercentage":0,"totalTaxAmount":0,"totalAmount":30.0,"amountDue":87326532.0,"discountPercentage":0,"status":"Submitted","note":"invoice
+        push 20230418 15.26"},"dataType":"invoices","companyId":"9c355f96-c981-4e03-b261-b9ea74ac82cc","pushOperationKey":"9a79ff49-23f4-45ed-b746-7c712c6c429c","dataConnectionKey":"1a115249-f359-4a2f-a842-54480549c52f","requestedOnUtc":"2023-05-17T22:41:00.3283475Z","completedOnUtc":"2023-05-17T22:41:00.6750202Z","status":"Failed","validation":{"errors":[{"itemId":"9de24bb8-0543-4dbc-8aad-c0f16e89bb2d","message":"TotalAmount
+        (30.00) minus the sum of withholding tax amount (0) should be equal to AmountDue
+        (87326532.00)","validatorName":"Invoice"}],"warnings":[]},"statusCode":500}'
+  recorded_at: Wed, 17 May 2023 22:41:00 GMT
+recorded_with: VCR 6.1.0

@@ -1,8 +1,10 @@
 module Codat
   class Client < BaseClient
     autoload :Common, "codat/client/common"
+    autoload :Accounting, "codat/client/accounting"
 
     include Common
+    include Accounting
 
     def initialize(api_base_url: nil, encoded_api_key: nil, headers: {})
       api_base_url ||= Codat.api_base_url
