@@ -18,51 +18,65 @@ module Codat
     ServiceUnavailable    = Class.new(ServerError)
     GatewayTimeout        = Class.new(ServerError)
 
-    attr_reader :status
-    attr_reader :detail
-    attr_reader :type
-    attr_reader :title
+    attr_reader :status_code
+    attr_reader :error
+    attr_reader :service
+    attr_reader :correlation_id
+    attr_reader :detaield_error_code
+    attr_reader :can_be_retried
 
     def initialize(
-      status: 500,
-      detail: "Something went wrong with communication with Codat API.",
-      type: "API error",
-      title: "Something went wrong with communication with Codat API."
+      status_code: 500,
+      error: "Something went wrong with communication with Codat API.",
+      service: "API error",
+      detailed_error_code: 500,
+      correlation_id: nil,
+      can_be_retried: "Unknown"
     )
       super
-      @status = status
-      @detail = detail
-      @type = type
-      @title = title
+      @status_code = status_code
+      @error = error
+      @service = service
+      @detailed_error_code = detailed_error_code
+      @correlation_id = correlation_id
+      @can_be_retried = can_be_retried
     end
 
     def self.from_response(status, body, _headers)
       parsed_error = parse_error(body)
-      status = parsed_error.dig(:status)
-      detail = parsed_error.dig(:detail)
-      type = parsed_error.dig(:type)
-      title = parsed_error.dig(:title)
-      error = error_class(status)&.new(
-        status: status,
-        detail: detail,
-        type: type,
-        title: title
+      status_code = parsed_error.dig(:status_code)
+      error = parsed_error.dig(:error)
+      service = parsed_error.dig(:service)
+      correlation_id = parsed_error.dig(:correlation_id)
+      detailed_error_code = parsed_error.dig(:detailed_error_code)
+      can_be_retried = parsed_error.dig(:can_be_retried)
+      error = error_class(status_code)&.new(
+        status_code: status_code,
+        error: error,
+        service: service,
+        correlation_id: correlation_id,
+        detailed_error_code: detailed_error_code,
+        can_be_retried: can_be_retried
       )
       error ||= ClientError.new(
-        status: status,
-        detail: detail,
-        type: type,
-        title: title
+        status_code: status_code,
+        error: error,
+        service: service,
+        correlation_id: correlation_id,
+        detailed_error_code: detailed_error_code,
+        can_be_retried: can_be_retried
       )
       error
     end
 
     def self.parse_error(body)
       {
-        detail: body.dig("detail"),
-        status: body.dig("status"),
-        title: body.dig("title"),
-        type: body.dig("type")
+        status_code: body.dig("statusCode"),
+        error: body.dig("error"),
+        service: body.dig("service"),
+        correlation_id: body.dig("correlationId"),
+        can_be_retried: body.dig("canBeRetried"),
+        detailed_error_code: body.dig("detailedErrorCode")
       }
     end
 
