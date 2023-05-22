@@ -1021,5 +1021,129 @@ RSpec.describe Codat::Client::Accounting do
         end
       end
     end
+
+    describe 'get_bank_accounts' do
+      it 'should return a list of bank accounts with the correct attributes' do
+        VCR.use_cassette('get_bank_accounts') do
+          response = client.get_bank_accounts(company_id: company_id, connection_id: connection_id)["results"]
+          expect(response).to be_a(Array)
+          response = response[0]
+          expect(response).to be_a(Hash)
+          expect(response).to have_key("accountName")
+          expect(response).to have_key("accountType")
+          expect(response).to have_key("nominalCode")
+        end
+      end
+    end
+
+    describe 'get_bank_account_options' do
+      it 'should return expected data for the request payload' do
+        VCR.use_cassette('get_bank_account_options') do
+          response = client.get_bank_account_options(company_id: company_id, connection_id: connection_id)
+          expect(response).to be_a(Hash)
+          expect(response).to have_key("type")
+          expect(response).to have_key("displayName")
+          expect(response).to have_key("properties")
+          expect(response).to have_key("required")
+        end
+      end
+    end
+
+    describe 'create_bank_account' do
+      let(:body) do
+        {
+          "id": "string",
+          "accountName": "string",
+          "accountType": "Unknown",
+          "nominalCode": "string",
+          "sortCode": "string",
+          "accountNumber": "string",
+          "iBan": "string",
+          "currency": "GBP",
+          "balance": 0,
+          "institution": "string",
+          "availableBalance": 0,
+          "overdraftLimit": 0,
+          "metadata": {
+            "isDeleted": true
+          },
+          "modifiedDate": "2022-10-23T00:00:00.000Z",
+          "sourceModifiedDate": "2022-10-23T00:00:00.000Z"
+        }
+      end
+
+      it 'should return a bank account with the correct attributes' do
+        VCR.use_cassette('create_bank_account') do
+          response = client.create_bank_account(company_id: company_id, connection_id: connection_id, body: body)["data"]
+          expect(response).to be_a(Hash)
+          expect(response).to have_key("accountName")
+          expect(response).to have_key("accountType")
+          expect(response).to have_key("nominalCode")
+        end
+      end
+    end
+
+    describe 'get_items' do
+      it 'should return a list of items with the correct attributes' do
+        VCR.use_cassette('get_items') do
+          response = client.get_items(company_id: company_id)["results"]
+          expect(response).to be_a(Array)
+          response = response[0]
+          expect(response).to be_a(Hash)
+          expect(response).to have_key("itemStatus")
+          expect(response).to have_key("type")
+          expect(response).to have_key("isBillItem")
+          expect(response).to have_key("isInvoiceItem")
+        end
+      end
+    end
+
+    describe 'get_item_options' do
+      it 'should return expected data for the request payload' do
+        VCR.use_cassette('get_item_options') do
+          response = client.get_item_options(company_id: company_id, connection_id: connection_id)
+          expect(response).to be_a(Hash)
+          expect(response).to have_key("type")
+          expect(response).to have_key("displayName")
+          expect(response).to have_key("properties")
+          expect(response).to have_key("required")
+        end
+      end
+    end
+
+    describe 'create_item' do
+      let(:body) do
+        {
+          "id": "string",
+          "accountName": "string",
+          "accountType": "Unknown",
+          "nominalCode": "string",
+          "sortCode": "string",
+          "accountNumber": "string",
+          "iBan": "string",
+          "currency": "GBP",
+          "balance": 0,
+          "institution": "string",
+          "availableBalance": 0,
+          "overdraftLimit": 0,
+          "metadata": {
+            "isDeleted": true
+          },
+          "modifiedDate": "2022-10-23T00:00:00.000Z",
+          "sourceModifiedDate": "2022-10-23T00:00:00.000Z"
+        }
+      end
+
+      it 'should return an item with the correct attributes' do
+        VCR.use_cassette('create_item') do
+          response = client.create_item(company_id: company_id, connection_id: connection_id, body: body)["data"]
+          expect(response).to be_a(Hash)
+          expect(response).to have_key("itemStatus")
+          expect(response).to have_key("type")
+          expect(response).to have_key("isBillItem")
+          expect(response).to have_key("isInvoiceItem")
+        end
+      end
+    end
   end
 end

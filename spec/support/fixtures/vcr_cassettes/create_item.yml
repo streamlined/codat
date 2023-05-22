@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/push/items
+    body:
+      encoding: UTF-8
+      string: '{"id":"string","accountName":"string","accountType":"Unknown","nominalCode":"string","sortCode":"string","accountNumber":"string","iBan":"string","currency":"GBP","balance":0,"institution":"string","availableBalance":0,"overdraftLimit":0,"metadata":{"isDeleted":true},"modifiedDate":"2022-10-23T00:00:00.000Z","sourceModifiedDate":"2022-10-23T00:00:00.000Z"}'
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 22 May 2023 22:59:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=2592000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - origin
+      Expect-Ct:
+      - max-age=86400, enforce
+      X-Correlation-Id:
+      - ac92b7c2dd86c4a5d29b086820111f9e
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7cb8abab9a291028-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"changes":[],"data":{"id":"string","modifiedDate":"2023-05-22T22:59:37.6879749Z","sourceModifiedDate":"2022-10-23T00:00:00Z","itemStatus":"Unknown","type":"Unknown","isBillItem":false,"isInvoiceItem":false,"metadata":{"isDeleted":true}},"dataType":"items","companyId":"9c355f96-c981-4e03-b261-b9ea74ac82cc","pushOperationKey":"34fb2afd-ef5d-4438-9d0e-75204e8b23f1","dataConnectionKey":"1a115249-f359-4a2f-a842-54480549c52f","requestedOnUtc":"2023-05-22T22:59:37.4163728Z","completedOnUtc":"2023-05-22T22:59:37.706419Z","status":"Success","validation":{"errors":[],"warnings":[]},"statusCode":200}'
+  recorded_at: Mon, 22 May 2023 22:59:37 GMT
+recorded_with: VCR 6.1.0

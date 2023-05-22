@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/options/bankAccounts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 22 May 2023 22:45:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7cb897a43d007ea2-LAX
+      Cache-Control:
+      - no-store
+      Strict-Transport-Security:
+      - max-age=2592000
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Apo-Via:
+      - origin,host
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      Expect-Ct:
+      - max-age=86400, enforce
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - origin
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      X-Content-Type-Options:
+      - nosniff
+      X-Correlation-Id:
+      - 79c2920bb56b62caca4ead99bcfc4748
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"type":"Object","displayName":"Bank Account","description":"An account
+        that bank transactions may be recorded against","properties":{"accountName":{"type":"String","displayName":"Name","description":"The
+        name of the bank account in the originating system","required":true},"accountType":{"type":"String","displayName":"Account
+        Type","description":"The type of account","required":true},"nominalCode":{"type":"String","displayName":"Nominal
+        Code","description":"The external reference given to each nominal account
+        for a business","required":true},"sortCode":{"type":"String","displayName":"Sort
+        Code","description":"The sort code for the bank account","required":true},"accountNumber":{"type":"String","displayName":"Account
+        Number","description":"The account number for the bank account","required":true},"iBan":{"type":"String","displayName":"IBAN","description":"The
+        international bank account number of the account. Often used when making or
+        receiving international payments","required":true},"currency":{"type":"String","displayName":"Currency","description":"The
+        currency of the bank account","required":true},"balance":{"type":"Number","displayName":"Balance","description":"The
+        balance of the bank account","required":true},"availableBalance":{"type":"Number","displayName":"Available
+        Balance","description":"The available balance of the bank account","required":true},"overdraftLimit":{"type":"Number","displayName":"Overdraft
+        Limit","description":"The pre-arranged overdraft limit of the account","required":true},"institution":{"type":"String","displayName":"Institution","description":"The
+        institution of the bank account","required":true},"metadata":{"type":"Object","displayName":"Metadata","description":"Miscellaneous
+        data about the item","properties":{"isDeleted":{"type":"Boolean","displayName":"IsDeleted","description":"A
+        boolean to indicate whether the object has been deleted","required":true}},"required":true}},"required":true}'
+  recorded_at: Mon, 22 May 2023 22:45:57 GMT
+recorded_with: VCR 6.1.0

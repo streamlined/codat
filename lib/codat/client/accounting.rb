@@ -118,6 +118,30 @@ module Codat
       def create_account(company_id:, connection_id:, body: {})
         post("/companies/#{company_id}/connections/#{connection_id}/push/accounts", body)
       end
+
+      def get_bank_accounts(company_id:, connection_id:)
+        get("/companies/#{company_id}/connections/#{connection_id}/data/bankAccounts")
+      end
+
+      def get_bank_account_options(company_id:, connection_id:)
+        get("/companies/#{company_id}/connections/#{connection_id}/options/bankAccounts")
+      end
+
+      def create_bank_account(company_id:, connection_id:, body: {})
+        post("/companies/#{company_id}/connections/#{connection_id}/push/bankAccounts", body)
+      end
+
+      def get_items(company_id:)
+        get("/companies/#{company_id}/data/items")
+      end
+
+      def get_item_options(company_id:, connection_id:)
+        get("/companies/#{company_id}/connections/#{connection_id}/options/items")
+      end
+
+      def create_item(company_id:, connection_id:, body: {})
+        post("/companies/#{company_id}/connections/#{connection_id}/push/items", body)
+      end
     end
   end
 end

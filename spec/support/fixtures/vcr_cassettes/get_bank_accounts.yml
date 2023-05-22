@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/data/bankAccounts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 22 May 2023 22:45:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7cb8979faa6c2b7b-LAX
+      Cache-Control:
+      - no-store
+      Strict-Transport-Security:
+      - max-age=2592000
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Apo-Via:
+      - origin,host
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      Expect-Ct:
+      - max-age=86400, enforce
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - origin
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      X-Content-Type-Options:
+      - nosniff
+      X-Correlation-Id:
+      - d8dfae04d9cd7d9d5c75903aad277ede
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"id":"a989e8c6-376c-43f0-8938-397d7831e216","accountName":"Business
+        Account","accountType":"Debit","nominalCode":"091","sortCode":"009911","accountNumber":"26883257","iBan":"GB29
+        LOYD 4773 2326 8832 57","currency":"GBP","balance":0,"availableBalance":-42.13,"modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-02-18T16:45:16","overdraftLimit":1000.00,"institution":"Lloyds
+        Bank","metadata":{"isDeleted":false}},{"id":"dbcaf288-2b39-4b95-8ab3-42202ab15918","accountName":"Current
+        Account","accountType":"Debit","nominalCode":"090","sortCode":"009911","accountNumber":"46762629","iBan":"GB29
+        LOYD 4773 2346 7626 29","currency":"GBP","balance":0,"availableBalance":0,"modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2023-02-14T01:15:16","overdraftLimit":5000.00,"institution":"Lloyds
+        Bank","metadata":{"isDeleted":false}},{"id":"ff8fdc4c-2aad-4ec1-9430-6bd201832eb3","accountName":"Undeposited
+        Funds","accountType":"Debit","nominalCode":"092","sortCode":"009911","accountNumber":"55932226","iBan":"GB29
+        LOYD 4773 2355 9322 26","currency":"GBP","balance":0,"availableBalance":0,"modifiedDate":"2023-05-11T13:49:19Z","sourceModifiedDate":"2022-04-04T11:30:16","overdraftLimit":1000.00,"institution":"Lloyds
+        Bank","metadata":{"isDeleted":false}}],"pageNumber":1,"pageSize":100,"totalResults":3,"_links":{"current":{"href":"/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/data/bankAccounts"},"self":{"href":"/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/data/bankAccounts"}}}'
+  recorded_at: Mon, 22 May 2023 22:45:56 GMT
+recorded_with: VCR 6.1.0
