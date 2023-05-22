@@ -38,6 +38,14 @@ module Codat
         post("/companies/#{company_id}/connections/#{connection_id}/push/payments", body)
       end
 
+      def get_payments(company_id:)
+        get("/companies/#{company_id}/data/payments")
+      end
+
+      def get_credit_notes(company_id:)
+        get("/companies/#{company_id}/data/creditNotes")
+      end
+
       # Credit notes are primarily used for QB.. for NetSuite they use Bill Credit Notes
       def get_credit_note_options(company_id:, connection_id:)
         get("/companies/#{company_id}/connections/#{connection_id}/options/creditNotes")
@@ -97,6 +105,18 @@ module Codat
 
       def create_customer(company_id:, connection_id:, body: {})
         post("/companies/#{company_id}/connections/#{connection_id}/push/customers", body)
+      end
+
+      def get_accounts(company_id:)
+        get("/companies/#{company_id}/data/accounts")
+      end
+
+      def get_account_options(company_id:, connection_id:)
+        get("/companies/#{company_id}/connections/#{connection_id}/options/chartOfAccounts")
+      end
+
+      def create_account(company_id:, connection_id:, body: {})
+        post("/companies/#{company_id}/connections/#{connection_id}/push/accounts", body)
       end
     end
   end

@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.codat.io/companies/9c355f96-c981-4e03-b261-b9ea74ac82cc/connections/1a115249-f359-4a2f-a842-54480549c52f/push/accounts
+    body:
+      encoding: UTF-8
+      string: '{"id":"1b6266d1-1e44-46c5-8eb5-a8f98e03124e","nominalCode":"610","name":"Accounts
+        Receivable","description":"Invoices the business has issued but has not yet
+        collected payment on.","fullyQualifiedCategory":"Asset.Current","fullyQualifiedName":"Asset.Current.Accounts
+        Receivable","currency":"GBP","currentBalance":0,"type":"Asset","status":"Active","isBankAccount":true,"validDatatypeLinks":[{"property":"string","links":["string"]}],"metadata":{"isDeleted":true},"modifiedDate":"2022-10-23T00:00:00.000Z","sourceModifiedDate":"2022-10-23T00:00:00.000Z"}'
+    headers:
+      User-Agent:
+      - Codat v0.1.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 22 May 2023 22:11:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=2592000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Report-To:
+      - '{"codat-csp-endpoint":"default","max_age":31536000,"endpoints":[{"url":"https://report-to-uri.codat.io"}],"include_subdomains":true}'
+      Content-Security-Policy:
+      - default-src *.google-analytics.com 'self'; style-src 'self' 'unsafe-inline';
+        script-src  https://www.googletagmanager.com/ https://www.google-analytics.com/
+        'self' 'unsafe-inline'   ; img-src https://www.googletagmanager.com/ 'self'
+        data:;
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - origin
+      Expect-Ct:
+      - max-age=86400, enforce
+      X-Correlation-Id:
+      - 5465074a6aff838ca7e23b0c8b516cdc
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7cb865d2be990d40-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"changes":[],"data":{"id":"1b6266d1-1e44-46c5-8eb5-a8f98e03124e","nominalCode":"610","name":"Accounts
+        Receivable","description":"Invoices the business has issued but has not yet
+        collected payment on.","fullyQualifiedCategory":"Asset.Current","fullyQualifiedName":"Asset.Current.Accounts
+        Receivable","currency":"GBP","currentBalance":0,"type":"Asset","status":"Active","isBankAccount":true,"modifiedDate":"2023-05-22T22:11:56.5353541Z","sourceModifiedDate":"2022-10-23T00:00:00Z","validDatatypeLinks":[{"property":"string","links":["string"]}],"metadata":{"isDeleted":true}},"dataType":"chartOfAccounts","companyId":"9c355f96-c981-4e03-b261-b9ea74ac82cc","pushOperationKey":"e79ebda4-b6fd-40a6-b574-d3a82533250a","dataConnectionKey":"1a115249-f359-4a2f-a842-54480549c52f","requestedOnUtc":"2023-05-22T22:11:56.073141Z","completedOnUtc":"2023-05-22T22:11:56.5477173Z","status":"Success","validation":{"errors":[],"warnings":[]},"statusCode":200}'
+  recorded_at: Mon, 22 May 2023 22:11:56 GMT
+recorded_with: VCR 6.1.0

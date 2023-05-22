@@ -316,6 +316,21 @@ RSpec.describe Codat::Client::Accounting do
       end
     end
 
+    describe 'get_payments' do
+      it 'should return a list of payments with the correct attributes' do
+        VCR.use_cassette('get_payments') do
+          response = client.get_payments(company_id: company_id)["results"]
+          expect(response).to be_a(Array)
+          response = response[0]
+          expect(response).to be_a(Hash)
+          expect(response).to have_key("totalAmount")
+          expect(response).to have_key("customerRef")
+          expect(response).to have_key("accountRef")
+          expect(response).to have_key("currency")
+        end
+      end
+    end
+
     describe 'create_payment' do
       let(:body) do
         {
@@ -365,6 +380,25 @@ RSpec.describe Codat::Client::Accounting do
         end
       end
     end
+
+    describe 'get_credit_notes' do
+      it 'should return a list of credit_notes with the correct attributes' do
+        VCR.use_cassette('get_credit_notes') do
+          response = client.get_credit_notes(company_id: company_id)["results"]
+          expect(response).to be_a(Array)
+          response = response[0]
+          expect(response).to be_a(Hash)
+          expect(response).to have_key("totalAmount")
+          expect(response).to have_key("totalDiscount")
+          expect(response).to have_key("subTotal")
+          expect(response).to have_key("totalTaxAmount")
+          expect(response).to have_key("discountPercentage")
+          expect(response).to have_key("remainingCredit")
+          expect(response).to have_key("status")
+        end
+      end
+    end
+
 
     describe 'get_credit_note_options' do
       it 'should return expected data for the request payload' do
@@ -916,6 +950,74 @@ RSpec.describe Codat::Client::Accounting do
           expect(response).to have_key("phone")
           expect(response).to have_key("addresses")
           expect(response).to have_key("contacts")
+        end
+      end
+    end
+
+    describe 'get_accounts' do
+      it 'should return a list of accounts with the correct attributes' do
+        VCR.use_cassette('get_accounts') do
+          response = client.get_accounts(company_id: company_id)["results"]
+          expect(response).to be_a(Array)
+          response = response[0]
+          expect(response).to be_a(Hash)
+          expect(response).to have_key("type")
+          expect(response).to have_key("status")
+          expect(response).to have_key("isBankAccount")
+        end
+      end
+    end
+
+    describe 'get_account_options' do
+      it 'should return expected data for the request payload' do
+        VCR.use_cassette('get_account_options') do
+          response = client.get_account_options(company_id: company_id, connection_id: connection_id)
+          expect(response).to be_a(Hash)
+          expect(response).to have_key("type")
+          expect(response).to have_key("displayName")
+          expect(response).to have_key("properties")
+          expect(response).to have_key("required")
+        end
+      end
+    end
+
+    describe 'create_account' do
+      let(:body) do
+        {
+          "id": "1b6266d1-1e44-46c5-8eb5-a8f98e03124e",
+          "nominalCode": "610",
+          "name": "Accounts Receivable",
+          "description": "Invoices the business has issued but has not yet collected payment on.",
+          "fullyQualifiedCategory": "Asset.Current",
+          "fullyQualifiedName": "Asset.Current.Accounts Receivable",
+          "currency": "GBP",
+          "currentBalance": 0,
+          "type": "Asset",
+          "status": "Active",
+          "isBankAccount": true,
+          "validDatatypeLinks": [
+            {
+              "property": "string",
+              "links": [
+                "string"
+              ]
+            }
+          ],
+          "metadata": {
+            "isDeleted": true
+          },
+          "modifiedDate": "2022-10-23T00:00:00.000Z",
+          "sourceModifiedDate": "2022-10-23T00:00:00.000Z"
+        }
+      end
+
+      it 'should return an account with the correct attributes' do
+        VCR.use_cassette('create_account') do
+          response = client.create_account(company_id: company_id, connection_id: connection_id, body: body)["data"]
+          expect(response).to be_a(Hash)
+          expect(response).to have_key("type")
+          expect(response).to have_key("status")
+          expect(response).to have_key("isBankAccount")
         end
       end
     end
