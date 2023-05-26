@@ -2,8 +2,13 @@ module Codat
   class Client
     module Accounting # accounting API
 
-      def get_invoices(company_id:)
-        get("/companies/#{company_id}/data/invoices")
+      def get_invoices(company_id:, order_by: nil, query: nil, page: 1, page_size: 100)
+        get("/companies/#{company_id}/data/invoices", {
+          orderBy: order_by,
+          query: query,
+          page: page,
+          pageSize: page_size
+        }.compact)
       end
 
       def create_invoice(company_id:, connection_id:, body: {})
@@ -38,12 +43,26 @@ module Codat
         post("/companies/#{company_id}/connections/#{connection_id}/push/payments", body)
       end
 
-      def get_payments(company_id:)
-        get("/companies/#{company_id}/data/payments")
+      def get_payments(company_id:, order_by: nil, query: nil, page: 1, page_size: 100)
+        get("/companies/#{company_id}/data/payments", {
+          orderBy: order_by,
+          query: query,
+          page: page,
+          pageSize: page_size
+        }.compact)
       end
 
-      def get_credit_notes(company_id:)
-        get("/companies/#{company_id}/data/creditNotes")
+      def get_payment(company_id:, payment_id:)
+        get("/companies/#{company_id}/data/payments/#{payment_id}")
+      end
+
+      def get_credit_notes(company_id:, order_by: nil, query: nil, page: 1, page_size: 100)
+        get("/companies/#{company_id}/data/creditNotes", {
+          orderBy: order_by,
+          query: query,
+          page: page,
+          pageSize: page_size
+        }.compact)
       end
 
       # Credit notes are primarily used for QB.. for NetSuite they use Bill Credit Notes
@@ -67,12 +86,22 @@ module Codat
         post("/companies/#{company_id}/connections/#{connection_id}/push/billCreditNotes", body)
       end
 
-      def get_bill_credit_notes(company_id:)
-        get("/companies/#{company_id}/data/billCreditNotes")
+      def get_bill_credit_notes(company_id:, order_by: nil, query: nil, page: 1, page_size: 100)
+        get("/companies/#{company_id}/data/billCreditNotes", {
+          orderBy: order_by,
+          query: query,
+          page: page,
+          pageSize: page_size
+        }.compact)
       end
 
-      def get_journal_entries(company_id:)
-        get("/companies/#{company_id}/data/journalEntries")
+      def get_journal_entries(company_id:, order_by: nil, query: nil, page: 1, page_size: 100)
+        get("/companies/#{company_id}/data/journalEntries", {
+          orderBy: order_by,
+          query: query,
+          page: page,
+          pageSize: page_size
+        }.compact)
       end
 
       def get_journal_entry_options(company_id:, connection_id:)
@@ -83,8 +112,17 @@ module Codat
         post("/companies/#{company_id}/connections/#{connection_id}/push/journalEntries", body)
       end
 
-      def get_purchase_orders(company_id:)
-        get("/companies/#{company_id}/data/purchaseOrders")
+      def get_journal_entry(company_id:, journal_entry_id:)
+        get("/companies/#{company_id}/data/journalEntries/#{journal_entry_id}")
+      end
+
+      def get_purchase_orders(company_id:, order_by: nil, query: nil, page: 1, page_size: 100)
+        get("/companies/#{company_id}/data/purchaseOrders", {
+          orderBy: order_by,
+          query: query,
+          page: page,
+          pageSize: page_size
+        }.compact)
       end
 
       def get_purchase_order_options(company_id:, connection_id:)
@@ -95,8 +133,17 @@ module Codat
         post("/companies/#{company_id}/connections/#{connection_id}/push/purchaseOrders", body)
       end
 
-      def get_customers(company_id:)
-        get("/companies/#{company_id}/data/customers")
+      def get_customers(company_id:, order_by: nil, query: nil, page: 1, page_size: 100)
+        get("/companies/#{company_id}/data/customers", {
+          orderBy: order_by,
+          query: query,
+          page: page,
+          pageSize: page_size
+        }.compact)
+      end
+
+      def get_customer(company_id: customer_id:)
+        get("/companies/#{company_id}/data/customers#{customer_id}")
       end
 
       def get_customer_options(company_id:, connection_id:)
@@ -107,8 +154,17 @@ module Codat
         post("/companies/#{company_id}/connections/#{connection_id}/push/customers", body)
       end
 
-      def get_accounts(company_id:)
-        get("/companies/#{company_id}/data/accounts")
+      def get_accounts(company_id:, order_by: nil, query: nil, page: 1, page_size: 100)
+        get("/companies/#{company_id}/data/accounts", {
+          orderBy: order_by,
+          query: query,
+          page: page,
+          pageSize: page_size
+        }.compact)
+      end
+
+      def get_account(company_id:, account_id:)
+        get("/companies/#{company_id}/data/accounts/#{account_id}")
       end
 
       def get_account_options(company_id:, connection_id:)
@@ -119,8 +175,13 @@ module Codat
         post("/companies/#{company_id}/connections/#{connection_id}/push/accounts", body)
       end
 
-      def get_bank_accounts(company_id:, connection_id:)
-        get("/companies/#{company_id}/connections/#{connection_id}/data/bankAccounts")
+      def get_bank_accounts(company_id:, connection_id:, order_by: nil, query: nil, page: 1, page_size: 100)
+        get("/companies/#{company_id}/connections/#{connection_id}/data/bankAccounts", {
+          orderBy: order_by,
+          query: query,
+          page: page,
+          pageSize: page_size
+        }.compact)
       end
 
       def get_bank_account_options(company_id:, connection_id:)
@@ -131,8 +192,13 @@ module Codat
         post("/companies/#{company_id}/connections/#{connection_id}/push/bankAccounts", body)
       end
 
-      def get_items(company_id:)
-        get("/companies/#{company_id}/data/items")
+      def get_items(company_id:, order_by: nil, query: nil, page: 1, page_size: 100)
+        get("/companies/#{company_id}/data/items", {
+          orderBy: order_by,
+          query: query,
+          page: page,
+          pageSize: page_size
+        }.compact)
       end
 
       def get_item_options(company_id:, connection_id:)
@@ -141,6 +207,19 @@ module Codat
 
       def create_item(company_id:, connection_id:, body: {})
         post("/companies/#{company_id}/connections/#{connection_id}/push/items", body)
+      end
+
+      def get_sales_orders(company_id:, order_by: nil, query: nil, page: 1, page_size: 100)
+        get("/companies/#{company_id}/data/salesOrders", {
+          orderBy: order_by,
+          query: query,
+          page: page,
+          pageSize: page_size
+        }.compact)
+      end
+
+      def get_sales_orer(company_id:, sales_order_id:)
+        get("/companies/#{company_id}/data/salesOrders/#{sales_order_id}")
       end
     end
   end
