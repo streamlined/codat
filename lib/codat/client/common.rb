@@ -34,7 +34,7 @@ module Codat
 
       # https://docs.codat.io/codat-api#/operations/create-pull-operation#Path-Parameters
       def queue_pull_operation(company_id:, data_type: )
-        post("/companies/#{company_id}/data/#{data_type}")
+        post("/companies/#{company_id}/data/queue/#{data_type}")
       end
 
       def get_push_options(company_id:, data_type:, connection_id:)
