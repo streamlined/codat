@@ -218,8 +218,34 @@ module Codat
         }.compact)
       end
 
-      def get_sales_orer(company_id:, sales_order_id:)
+      def get_sales_order(company_id:, sales_order_id:)
         get("/companies/#{company_id}/data/salesOrders/#{sales_order_id}")
+      end
+
+      def get_tracking_categories(company_id:, order_by: nil, query: nil, page: 1, page_size: 100)
+        get("/companies/#{company_id}/data/trackingCategories", {
+          orderBy: order_by,
+          query: query,
+          page: page,
+          pageSize: page_size
+        }.compact)
+      end
+
+      def get_tracking_category(company_id:, tracking_category_id:)
+        get("/companies/#{company_id}/data/trackingCategories/#{tracking_category_id}")
+      end
+
+      def get_tax_rates(company_id:, order_by: nil, query: nil, page: 1, page_size: 100)
+        get("/companies/#{company_id}/data/taxRates", {
+          orderBy: order_by,
+          query: query,
+          page: page,
+          pageSize: page_size
+        }.compact)
+      end
+
+      def get_tax_rate(company_id:, tax_rate_id:)
+        get("/companies/#{company_id}/data/taxRates/#{tax_rate_id}")
       end
     end
   end
