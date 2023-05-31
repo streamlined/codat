@@ -142,7 +142,7 @@ module Codat
         }.compact)
       end
 
-      def get_customer(company_id: customer_id:)
+      def get_customer(company_id:, customer_id:)
         get("/companies/#{company_id}/data/customers/#{customer_id}")
       end
 
