@@ -37,6 +37,10 @@ module Codat
         post("/companies/#{company_id}/data/queue/#{data_type}")
       end
 
+      def get_push_operation(company_id:, push_operation_id:)
+        get("/companies/#{company_id}/push/#{push_operation_id}")
+      end
+
       def get_push_options(company_id:, data_type:, connection_id:)
         get("/companies/#{company_id}/connections/#{connection_id}/options/#{data_type}")
       end
